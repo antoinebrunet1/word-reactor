@@ -30,16 +30,6 @@ class Client(commands.Bot):
         except Exception as e:
             print(f'Error syncing commands: {e}')
 
-    async def on_message(self, message):
-        if message.author == self.user:
-            return
-
-        if not is_message_reply(message):
-            return
-        
-        replied = await message.channel.fetch_message(message.reference.message_id)
-        print(replied.content)
-
 
 intents = discord.Intents.default()
 intents.message_content = True
