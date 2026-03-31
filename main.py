@@ -46,6 +46,9 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
         return
 
     message_to_react_to = await interaction.channel.fetch_message(message_id)
+
+    word = word.upper()
+
     emojis_to_react_with = word_to_letters_emojis_array(word)
 
     for emoji in emojis_to_react_with:
