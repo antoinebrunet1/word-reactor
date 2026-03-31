@@ -29,7 +29,7 @@ GUILD_ID = discord.Object(id=server_id)
 
 
 @client.tree.command(name="react",
-                     description="Make the bot react to a message with a word formed with letters emojis.",
+                     description="Make the bot react to a message with a word formed with letters emojis. The word should not have any repeated letters.",
                      guild=GUILD_ID)
 async def react(interaction: discord.Interaction, message_id: str, word: str):
     """
