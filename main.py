@@ -1,7 +1,10 @@
+from curses.ascii import isalpha
+
 import discord
 from dotenv import load_dotenv
 import os
 from discord.ext import commands
+from collections import Counter
 
 load_dotenv()
 
@@ -40,6 +43,15 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
     :return: Does not return anything.
     """
     await interaction.response.send_message(f'{message_id} : {word}')
+
+
+def is_word_valid(word):
+    """
+    Returns true only if the word is valid i.e. has letters in the union of A-Z and a-z and has no repeated letters.
+    :param word: The word to check.
+    :return: true only if the word is valid i.e. has letters in the union of A-Z and a-z and has no repeated letters.
+    """
+    return isalpha(word) and len(Counter(word)) == len(word)
 
 
 client.run(token)
