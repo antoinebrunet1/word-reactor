@@ -43,7 +43,8 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
     :return: Does not return anything.
     """
     if not is_word_valid(word):
-        await interaction.response.send_message("Error: The letters should be in the union of A-Z and a-z and no letters should repeat.")
+        await interaction.response.send_message(
+            "Error: The letters should be in the union of A-Z and a-z and no letters should repeat.")
         return
 
 
