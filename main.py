@@ -1,5 +1,3 @@
-from curses.ascii import isalpha
-
 import discord
 from dotenv import load_dotenv
 import os
@@ -32,7 +30,7 @@ GUILD_ID = discord.Object(id=server_id)
 
 
 @client.tree.command(name="react",
-                     description="Make the bot react to a message with a word formed with letters emojis. The word should not have any repeated letters.",
+                     description="Make the bot react to a message with a word formed with letters emojis.",
                      guild=GUILD_ID)
 async def react(interaction: discord.Interaction, message_id: str, word: str):
     """
@@ -54,7 +52,7 @@ def is_word_valid(word):
     :param word: The word to check.
     :return: true only if the word is valid i.e. has letters in the union of A-Z and a-z and has no repeated letters.
     """
-    return isalpha(word) and len(Counter(word)) == len(word)
+    return word.isalpha() and len(Counter(word)) == len(word)
 
 
 client.run(token)
