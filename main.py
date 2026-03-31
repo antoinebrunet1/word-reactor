@@ -42,6 +42,9 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
     :param word: The word the bot has to react with using letters emojis. The letters should be in the union of A-Z and a-z and no letters should repeat.
     :return: Does not return anything.
     """
+    if not is_word_valid(word):
+        await interaction.response.send_message("Error: The letters should be in the union of A-Z and a-z and no letters should repeat.")
+        return
     await interaction.response.send_message(f'{message_id} : {word}')
 
 
