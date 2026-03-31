@@ -32,6 +32,13 @@ GUILD_ID = discord.Object(id=server_id)
                      description="Make the bot react to a message with a word formed with letters emojis.",
                      guild=GUILD_ID)
 async def react(interaction: discord.Interaction, message_id: str, word: str):
+    """
+    Makes the bot react to a message with a word formed with letters emojis.
+    :param interaction: The Discord Interaction.
+    :param message_id: The ID of the message the bot has to react to.
+    :param word: The word the bot has to react with using letters emojis. The case does not matter and no letters should repeat.
+    :return: Does not return anything.
+    """
     await interaction.response.send_message(f'{message_id} : {word}')
 
 
