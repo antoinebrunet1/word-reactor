@@ -5,8 +5,9 @@ from discord.ext import commands
 
 load_dotenv()
 
-token=os.getenv("TOKEN")
+token = os.getenv("TOKEN")
 server_id = os.getenv("SERVER_ID")
+
 
 class Client(commands.Bot):
     async def on_ready(self):
@@ -20,13 +21,18 @@ class Client(commands.Bot):
         except Exception as e:
             print(f'Error syncing commands: {e}')
 
+
 intents = discord.Intents.default()
 intents.message_content = True
 client = Client(command_prefix="!", intents=intents)
 GUILD_ID = discord.Object(id=server_id)
 
-@client.tree.command(name="react", description="Make the bot react to a message with a word formed with letters emojis.", guild=GUILD_ID)
+
+@client.tree.command(name="react",
+                     description="Make the bot react to a message with a word formed with letters emojis.",
+                     guild=GUILD_ID)
 async def react(interaction: discord.Interaction, message_id: str, word: str):
     await interaction.response.send_message(f'{message_id} : {word}')
+
 
 client.run(token)
