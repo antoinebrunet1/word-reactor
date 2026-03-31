@@ -7,7 +7,7 @@ load_dotenv()
 token=os.getenv("TOKEN")
 
 
-async def is_message_reply(message):
+def is_message_reply(message):
     """
     Returns true only if the given message is replying to another message.
     :param message: The message.
