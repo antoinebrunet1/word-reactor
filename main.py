@@ -2,20 +2,11 @@ import discord
 from dotenv import load_dotenv
 import os
 from discord.ext import commands
-from discord import app_commands
 
 load_dotenv()
 
 token=os.getenv("TOKEN")
 server_id = os.getenv("SERVER_ID")
-
-def is_message_reply(message):
-    """
-    Returns true only if the given message is replying to another message.
-    :param message: The message.
-    :return: true only if the given message is replying to another message.
-    """
-    return message.reference and message.reference.message_id
 
 
 class Client(commands.Bot):
