@@ -55,6 +55,15 @@ def is_word_valid(word):
     return word.isalpha() and len(Counter(word)) == len(word)
 
 
+def word_to_letters_emojis_array(word):
+    """
+    Returns an array of the emoji equivalents of each letter in a given uppercase word. The emoji for A is 0x1F1E6.
+    :param word: The given word.
+    :return: The resulting array.
+    """
+    return [letter_to_letter_emoji(letter) for letter in word]
+
+
 def letter_to_letter_emoji(letter):
     """
     Returns the emoji equivalent of a given uppercase letter. The emoji for A is 0x1F1E6.
