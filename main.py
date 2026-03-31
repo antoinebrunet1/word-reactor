@@ -54,6 +54,8 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
     for emoji in emojis_to_react_with:
         await message_to_react_to.add_reaction(emoji)
 
+    await interaction.response.send_message("Successfully reacted.")
+
 
 def is_word_valid(word):
     """
