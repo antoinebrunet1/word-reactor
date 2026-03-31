@@ -55,4 +55,17 @@ def is_word_valid(word):
     return word.isalpha() and len(Counter(word)) == len(word)
 
 
+def letter_to_letter_emoji(letter):
+    """
+    Returns the emoji equivalent of a given uppercase letter. The emoji for A is 0x1F1E6.
+    :param letter: The letter to convert.
+    :return: The emoji equivalent of the given uppercase letter.
+    """
+    base = ord('A')
+    offset = ord(letter) - base
+
+    # 0x1F1E6 is the Unicode of the emoji letter for the letter A.
+    return chr(0x1F1E6 + offset)
+
+
 client.run(token)
