@@ -39,7 +39,7 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
     Makes the bot react to a message with a word formed with letters emojis.
     :param interaction: The Discord Interaction.
     :param message_id: The ID of the message the bot has to react to.
-    :param word: The word the bot has to react with using letters emojis. The case does not matter and no letters should repeat.
+    :param word: The word the bot has to react with using letters emojis. The letters should be in the union of A-Z and a-z and no letters should repeat.
     :return: Does not return anything.
     """
     await interaction.response.send_message(f'{message_id} : {word}')
