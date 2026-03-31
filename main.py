@@ -21,6 +21,9 @@ class Client(discord.Client):
         print(f'Logged on as {self.user}!')
 
     async def on_message(self, message):
+        if message.author == self.user:
+            return
+
         if not is_message_reply(message):
             return
         
