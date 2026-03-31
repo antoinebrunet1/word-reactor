@@ -45,6 +45,12 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
             "Error: The letters should be in the union of A-Z and a-z and no letters should repeat.")
         return
 
+    message_to_react_to = await interaction.channel.fetch_message(message_id)
+    emojis_to_react_with = word_to_letters_emojis_array(word)
+
+    for emoji in emojis_to_react_with:
+        await message_to_react_to.add_reaction(emoji)
+
 
 def is_word_valid(word):
     """
