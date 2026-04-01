@@ -16,3 +16,24 @@ It contains 1 slash command named `react` that takes two parameters:
 ## Demo
 
 ![Image](https://github.com/user-attachments/assets/37115418-6ed5-49a3-9810-102af170b09a)
+
+## Usage instructions
+
+I created this bot on Discord. You can create one too and use this code to run it.
+
+### `.env` file
+
+If you have this project locally, you need to add a file called `.env` with those 2 properties:
+
+1. `TOKEN`
+2. `SERVER_ID`
+
+`TOKEN` is your bot token.
+
+`SERVER_ID` is the ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.
+
+⚠️ Do not make this file public. ⚠️
+
+### Running the bot
+
+To run the bot locally, I just run `main.py` in PyCharm (Python equivalent of IntelliJ).
