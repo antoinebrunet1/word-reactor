@@ -10,4 +10,4 @@ jobs:
       - name: Documentation Checker
         run: |
           python3 -m pip install pydocstyle
-          pydocstyle main.py
+          pydocstyle ./main.py
