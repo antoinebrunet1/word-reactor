@@ -1,3 +1,5 @@
+"""The main module of the bot."""
+
 import discord
 from dotenv import load_dotenv
 import os
@@ -11,7 +13,10 @@ server_id = os.getenv("SERVER_ID")
 
 
 class Client(commands.Bot):
+    """The Client class of the bot."""
+
     async def on_ready(self):
+        """Is run when the bot starts."""
         print(f'Logged on as {self.user}!')
 
         try:
@@ -34,7 +39,8 @@ GUILD_ID = discord.Object(id=server_id)
                      guild=GUILD_ID)
 async def react(interaction: discord.Interaction, message_id: str, word: str):
     """
-    Makes the bot react to a message with a word formed with letters emojis.
+    Make the bot react to a message with a word formed with letters emojis.
+
     :param interaction: The Discord Interaction.
     :param message_id: The ID of the message the bot has to react to.
     :param word: The word the bot has to react with using letters emojis. The letters should be in the union of A-Z and a-z and no letters should repeat.
@@ -59,7 +65,8 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
 
 def is_word_valid(word):
     """
-    Returns true only if the word is valid i.e. has letters in the union of A-Z and a-z and has no repeated letters.
+    Return true only if the word is valid i.e. has letters in the union of A-Z and a-z and has no repeated letters.
+
     :param word: The word to check.
     :return: true only if the word is valid i.e. has letters in the union of A-Z and a-z and has no repeated letters.
     """
@@ -68,7 +75,8 @@ def is_word_valid(word):
 
 def word_to_letters_emojis_array(word):
     """
-    Returns an array of the emoji equivalents of each letter in a given uppercase word. The emoji for A is 0x1F1E6.
+    Return an array of the emoji equivalents of each letter in a given uppercase word. The emoji for A is 0x1F1E6.
+
     :param word: The given word.
     :return: The resulting array.
     """
@@ -77,7 +85,8 @@ def word_to_letters_emojis_array(word):
 
 def letter_to_letter_emoji(letter):
     """
-    Returns the emoji equivalent of a given uppercase letter. The emoji for A is 0x1F1E6.
+    Return the emoji equivalent of a given uppercase letter. The emoji for A is 0x1F1E6.
+
     :param letter: The letter to convert.
     :return: The emoji equivalent of the given uppercase letter.
     """
