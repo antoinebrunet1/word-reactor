@@ -1,0 +1,13 @@
+name: Main
+
+on: push
+
+jobs:
+  documentation-checker:
+    name: Documentation Checker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Documentation Checker
+        run: |
+          python3 -m pip install pydocstyle
+          pydocstyle main.py
