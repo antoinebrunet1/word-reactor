@@ -13,4 +13,4 @@ jobs:
       - name: Documentation Checker
         run: |
           python3 -m pip install pydocstyle
-          pydocstyle ${{ github.workspace }}/main.py
+          pydocstyle main.py
