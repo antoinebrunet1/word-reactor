@@ -3,17 +3,13 @@ name: Main
 on: push
 
 jobs:
-  checkout-code:
-    name: Checkout Code
+  documentation-checker:
+    name: Documentation Checker
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-  documentation-checker:
-    name: Documentation Checker
-    runs-on: ubuntu-latest
-    steps:
       - name: Documentation Checker
         run: |
           python3 -m pip install pydocstyle
