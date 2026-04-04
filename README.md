@@ -21,6 +21,19 @@ It contains 1 slash command named `react` that takes two parameters:
 
 I created this bot on Discord. You can create one too and use this code to run it.
 
+### Dependencies
+
+The code uses these dependencies:
+
+* black
+* pydocstyle
+* discord.py
+* pytest
+* pytest-mock
+* python-dotenv
+* pytest-asyncio
+* pytest-cov
+
 ### `.env` file
 
 If you have this project locally, you need to add a file called `.env` with those 2 properties:
