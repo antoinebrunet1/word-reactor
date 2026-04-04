@@ -24,11 +24,7 @@ jobs:
 
       - name: All unit tests pass
         run: |
-          python3 -m pip install discord.py
-          python3 -m pip install pytest
-          python3 -m pip install pytest-mock
-          python3 -m pip install python-dotenv
-          python3 -m pip install pytest-asyncio
+          python3 -m pip install discord.py pytest pytest-mock python-dotenv pytest-asyncio
           python3 -m pytest
 
       - name: Coverage is at least 80%
