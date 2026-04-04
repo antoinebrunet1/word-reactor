@@ -24,6 +24,7 @@ jobs:
 
       - name: All Unit Tests Pass
         run: |
+          python3 -m pip install discord.py
           python3 -m pip install pytest
           python3 -m pip install pytest-mock
           python3 -m pytest
