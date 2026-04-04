@@ -58,12 +58,3 @@ If you have this project locally, you need to add a file called `.env` with thos
 ### Running the bot
 
 To run the bot locally, I just run `main.py` in PyCharm (Python equivalent of IntelliJ).
-
-## Future of the project
-
-In the future, I would like to enhance this project even further. I would like to:
-
-1. Add unit tests.
-2. Add the following points to the CI/CD pipeline:
-   1. The unit tests pass.
-   2. The test coverage is high enough.
