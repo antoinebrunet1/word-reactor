@@ -21,15 +21,15 @@ class Client(commands.Bot):
 
     async def on_ready(self):
         """Is run when the bot starts."""
-        print(f'Logged on as {self.user}!')
+        print(f"Logged on as {self.user}!")
 
         try:
             guild = discord.Object(id=server_id)
             synced = await self.tree.sync(guild=guild)
-            print(f'Synced {len(synced)} commands to guild {guild.id}')
+            print(f"Synced {len(synced)} commands to guild {guild.id}")
 
         except Exception as e:
-            print(f'Error syncing commands: {e}')
+            print(f"Error syncing commands: {e}")
 
 
 intents = discord.Intents.default()
@@ -39,9 +39,11 @@ client = Client(command_prefix="!", intents=intents)
 GUILD_ID = discord.Object(id=server_id)
 
 
-@client.tree.command(name="react",
-                     description="Make the bot react to a message with a word formed with letters emojis.",
-                     guild=GUILD_ID)
+@client.tree.command(
+    name="react",
+    description="Make the bot react to a message with a word formed with letters emojis.",
+    guild=GUILD_ID,
+)
 async def react(interaction: discord.Interaction, message_id: str, word: str):
     """
     Make the bot react to a message with a word formed with letters emojis.
@@ -53,7 +55,8 @@ async def react(interaction: discord.Interaction, message_id: str, word: str):
     """
     if not is_word_valid(word):
         await interaction.response.send_message(
-            "Error: The letters should be in the union of A-Z and a-z and no letters should repeat.")
+            "Error: The letters should be in the union of A-Z and a-z and no letters should repeat."
+        )
         return
 
     message_to_react_to = await interaction.channel.fetch_message(message_id)
@@ -95,7 +98,7 @@ def letter_to_letter_emoji(letter):
     :param letter: The letter to convert.
     :return: The emoji equivalent of the given uppercase letter.
     """
-    base = ord('A')
+    base = ord("A")
     offset = ord(letter) - base
 
     # 0x1F1E6 is the Unicode of the emoji letter for the letter A.
