@@ -34,6 +34,8 @@ client = Client(command_prefix="!", intents=intents)
 
 if __name__ == "__main__":
     GUILD_ID = discord.Object(id=server_id)
+else:
+    GUILD_ID = discord.Object(id="")
 
 
 @client.tree.command(name="react",
