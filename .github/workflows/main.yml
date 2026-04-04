@@ -3,6 +3,18 @@ name: Main
 on: push
 
 jobs:
+  style:
+    name: Style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Style
+        run: |
+          python3 -m pip install black
+          python3 -m black --check .
+
   documentation:
     name: Documentation
     runs-on: ubuntu-latest
