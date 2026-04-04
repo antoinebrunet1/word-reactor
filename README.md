@@ -13,6 +13,14 @@ It contains 1 slash command named `react` that takes two parameters:
 
 `word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
 
+### CI/CD pipeline
+
+This project uses a CI/CD pipeline with GitHub Actions. The pipeline is activated on push. It has 3 jobs:
+
+1. `style`
+2. `documentation`
+3. `unit-tests`
+
 ## Demo
 
 ![Image](https://github.com/user-attachments/assets/37115418-6ed5-49a3-9810-102af170b09a)
