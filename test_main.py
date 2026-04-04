@@ -8,17 +8,22 @@ from main import is_word_valid, word_to_letters_emojis_array, letter_to_letter_e
 def test_is_word_valid_happy_path():
     assert is_word_valid("hi")
 
+
 def test_is_word_valid_repeating_letters():
     assert not is_word_valid("hhi")
+
 
 def test_is_word_valid_non_alpha_letters():
     assert not is_word_valid("hi2")
 
+
 def test_word_to_letters_emojis_array_happy_path():
     assert ' '.join(word_to_letters_emojis_array("HI")) == "🇭 🇮"
 
+
 def test_letter_to_letter_emoji_happy_path():
     assert letter_to_letter_emoji("H") == "🇭"
+
 
 @pytest.mark.asyncio
 async def test_react_invalid_word(mocker):
@@ -27,7 +32,8 @@ async def test_react_invalid_word(mocker):
 
     await react.callback(mock_interaction, "0", "hhi")
 
-    mock_interaction.response.send_message.assert_awaited_once_with("Error: The letters should be in the union of A-Z and a-z and no letters should repeat.")
+    mock_interaction.response.send_message.assert_awaited_once_with(
+        "Error: The letters should be in the union of A-Z and a-z and no letters should repeat.")
 
 
 @pytest.mark.asyncio
