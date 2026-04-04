@@ -15,8 +15,7 @@ def test_is_word_valid_non_alpha_letters():
     assert not is_word_valid("hi2")
 
 def test_word_to_letters_emojis_array_happy_path():
-    actual_array = word_to_letters_emojis_array("HI")
-    assert ' '.join(actual_array) == "🇭 🇮"
+    assert ' '.join(word_to_letters_emojis_array("HI")) == "🇭 🇮"
 
 def test_letter_to_letter_emoji_happy_path():
     assert letter_to_letter_emoji("H") == "🇭"
