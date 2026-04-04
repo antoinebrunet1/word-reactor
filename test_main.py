@@ -38,7 +38,7 @@ async def test_react_invalid_word(mocker):
     await react.callback(mock_interaction, "0", "hhi")
 
     mock_interaction.response.send_message.assert_awaited_once_with(
-        "Error: The letters should be in the union of A-Z and a-z and no letters should repeat."
+        "Error: No letters should repeat."
     )
 
 
