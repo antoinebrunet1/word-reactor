@@ -97,4 +97,5 @@ def letter_to_letter_emoji(letter):
     return chr(0x1F1E6 + offset)
 
 
-client.run(token)
+if __name__ == "__main__":
+    client.run(token)
