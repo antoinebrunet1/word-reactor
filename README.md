@@ -25,14 +25,14 @@ I created this bot on Discord. You can create one too and use this code to run i
 
 The code uses these dependencies:
 
-* black
-* pydocstyle
-* discord.py
-* pytest
-* pytest-mock
-* python-dotenv
-* pytest-asyncio
-* pytest-cov
+* `black`
+* `pydocstyle`
+* `discord.py`
+* `pytest`
+* `pytest-mock`
+* `python-dotenv`
+* `pytest-asyncio`
+* `pytest-cov`
 
 ### `.env` file
 
