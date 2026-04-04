@@ -19,6 +19,9 @@ jobs:
     name: Unit Tests
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
       - name: All Unit Tests Pass
         run: |
           python3 -m pip install pytest
