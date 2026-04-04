@@ -14,3 +14,18 @@ jobs:
         run: |
           python3 -m pip install pydocstyle
           pydocstyle main.py
+
+  unit-tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: All Unit Tests Pass
+        run: |
+          python3 -m pip install pytest
+          python3 -m pip install pytest-mock
+          python3 -m pytest
+
+      - name: Coverage Is At Least 80%
+        run: |
+          python3 -m pip install pytest-cov
+          python3 -m pytest --cov=main --cov-fail-under=80
