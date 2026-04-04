@@ -9,7 +9,11 @@ from collections import Counter
 load_dotenv()
 
 token = os.getenv("TOKEN")
-server_id = os.getenv("SERVER_ID")
+
+if __name__ == "__main__":
+    server_id = os.getenv("SERVER_ID")
+else:
+    server_id = "0"
 
 
 class Client(commands.Bot):
@@ -32,10 +36,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = Client(command_prefix="!", intents=intents)
 
-if __name__ == "__main__":
-    GUILD_ID = discord.Object(id=server_id)
-else:
-    GUILD_ID = discord.Object(id="")
+GUILD_ID = discord.Object(id=server_id)
 
 
 @client.tree.command(name="react",
