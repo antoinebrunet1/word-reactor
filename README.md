@@ -57,4 +57,4 @@ If you have this project locally, you need to add a file called `.env` with thos
 
 ### Running the bot
 
-To run the bot locally, I just run `main.py` in PyCharm (Python equivalent of IntelliJ).
+To run the bot locally, just run `main.py`.
