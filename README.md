@@ -21,6 +21,11 @@ This project uses a CI/CD pipeline with GitHub Actions. The pipeline is activate
 2. `documentation`
 3. `unit-tests`
 
+The `unit-tests` job checks the following points:
+
+1. All the unit tests pass.
+2. The unit tests cover at least 80% of `main.py`.
+
 ## Demo
 
 ![Image](https://github.com/user-attachments/assets/37115418-6ed5-49a3-9810-102af170b09a)
