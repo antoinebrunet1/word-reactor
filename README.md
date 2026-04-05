@@ -30,19 +30,13 @@
 ## Local setup instructions
 
 1. Create a bot on Discord's website.
-2. Install the following dependencies using the `pip` command:
-   1. `black`
-   2. `pydocstyle`
-   3. `discord.py`
-   4. `pytest`
-   5. `pytest-mock`
-   6. `python-dotenv`
-   7. `pytest-asyncio`
-   8. `pytest-cov`
-3. Add a **non-public** file called `.env` with those 2 properties:
+2. Run the following command: `python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov`.
+3. Fork the repository.
+4. Uncomment all the commented out code and comment out the `token = ...` line that does not use `gentenv`.
+5. Add a **non-public** file called `.env` with those 2 properties:
    1. `TOKEN` (Your bot token)
    2. `SERVER_ID` (The ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.)
-4. Use the latest release of this code to run the bot by running `main.py`.
+6. Run the bot by running `main.py`.
 
 ## Usage instructions
 
