@@ -53,38 +53,19 @@ The `unit-tests` job checks the following points:
 
 ![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
 
-## Setup instructions
+## Local setup instructions
 
-Create a bot on Discord's website.
-
-### Dependencies
-
-The code uses these dependencies:
-
-1. `black`
-2. `pydocstyle`
-3. `discord.py`
-4. `pytest`
-5. `pytest-mock`
-6. `python-dotenv`
-7. `pytest-asyncio`
-8. `pytest-cov`
-
-All these dependencies can be installed using pip.
-
-### `.env` file
-
-If you have this project locally, you need to add a file called `.env` with those 2 properties:
-
-1. `TOKEN`
-2. `SERVER_ID`
-
-`TOKEN` is your bot token.
-
-`SERVER_ID` is the ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.
-
-⚠️ Do not make this file public. ⚠️
-
-### Running the bot
-
-Use the latest release of this code to run the bot by running `main.py`.
+1. Create a bot on Discord's website.
+2. Install the following dependencies using the `pip` command:
+   1. `black`
+   2. `pydocstyle`
+   3. `discord.py`
+   4. `pytest`
+   5. `pytest-mock`
+   6. `python-dotenv`
+   7. `pytest-asyncio`
+   8. `pytest-cov`
+3. Add a **non-public** file called `.env` with those 2 properties:
+   1. `TOKEN` (Your bot token)
+   2. `SERVER_ID` (The ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.)
+4. Use the latest release of this code to run the bot by running `main.py`.
