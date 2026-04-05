@@ -25,7 +25,7 @@
 
 <hr>
 
-## Slash command
+## Usage instructions
 
 It contains 1 slash command named `react` that takes two parameters:
 
@@ -36,7 +36,7 @@ It contains 1 slash command named `react` that takes two parameters:
 
 `word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
 
-## Demo
+### Demo
 
 ![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
 
