@@ -36,19 +36,6 @@ It contains 1 slash command named `react` that takes two parameters:
 
 `word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
 
-## CI/CD pipeline
-
-This project uses a CI/CD pipeline with GitHub Actions. The pipeline is activated on push. It has 3 jobs:
-
-1. `style`
-2. `documentation`
-3. `unit-tests`
-
-The `unit-tests` job checks the following points:
-
-1. All the unit tests pass.
-2. The unit tests cover at least 80% of `main.py`.
-
 ## Demo
 
 ![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
