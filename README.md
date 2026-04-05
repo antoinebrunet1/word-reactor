@@ -1,4 +1,6 @@
-﻿# Word Reactor
+﻿<h1 align="center">
+    Word Reactor
+</h1>
 
 [![Main](https://github.com/antoinebrunet1/word-reactor/actions/workflows/main.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/main.yml)
 
