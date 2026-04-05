@@ -1,5 +1,5 @@
 ﻿<h1 align="center">
-    🤖 Word Reactor 🤖
+    Word Reactor
 </h1>
 
 <p align="center">
