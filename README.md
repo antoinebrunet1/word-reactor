@@ -12,6 +12,8 @@
 
 This bot is written in Python.
 
+### Slash command
+
 It contains 1 slash command named `react` that takes two parameters:
 
 1. `message_id`
