@@ -55,7 +55,7 @@ The `unit-tests` job checks the following points:
 
 ## Setup instructions
 
-You can create a bot on Discord's website and use this code to run it by running `main.py`.
+Create a bot on Discord's website.
 
 ### Dependencies
 
@@ -84,3 +84,7 @@ If you have this project locally, you need to add a file called `.env` with thos
 `SERVER_ID` is the ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.
 
 ⚠️ Do not make this file public. ⚠️
+
+### Running the bot
+
+Use the latest release of this code to run the bot by running `main.py`.
