@@ -25,7 +25,7 @@
 
 <hr>
 
-### Slash command
+## Slash command
 
 It contains 1 slash command named `react` that takes two parameters:
 
@@ -36,7 +36,7 @@ It contains 1 slash command named `react` that takes two parameters:
 
 `word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
 
-### CI/CD pipeline
+## CI/CD pipeline
 
 This project uses a CI/CD pipeline with GitHub Actions. The pipeline is activated on push. It has 3 jobs:
 
