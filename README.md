@@ -2,7 +2,11 @@
     🤖 Word Reactor 🤖
 </h1>
 
+<div align="center">
+
 [![Main](https://github.com/antoinebrunet1/word-reactor/actions/workflows/main.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/main.yml)
+
+</div>
 
 ## Discord chat bot in Python that reacts to indicated messages with given words formed with emoji letters
 
