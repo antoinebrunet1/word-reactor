@@ -40,6 +40,8 @@
 
 ## Usage instructions
 
+You can add the bot to your server using this link: https://discord.com/oauth2/authorize?client_id=1488295878849597581.
+
 It contains 1 slash command named `react` that takes two parameters:
 
 1. `message_id`
