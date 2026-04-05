@@ -51,4 +51,4 @@ It contains 1 slash command named `react` that takes two parameters:
 
 ### Demo
 
-![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
+![Image](https://github.com/user-attachments/assets/cc2319f2-8457-4c40-bdee-43421ca23875)
