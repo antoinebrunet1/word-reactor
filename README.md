@@ -8,7 +8,7 @@
 
 </div>
 
-## Discord chat bot in Python that reacts to indicated messages with given words formed with emoji letters
+## Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters
 
 This bot is written in Python.
 
