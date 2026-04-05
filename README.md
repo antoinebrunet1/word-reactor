@@ -8,6 +8,8 @@
 
 </div>
 
+<hr>
+
 ## Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters
 
 ### Slash command
