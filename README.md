@@ -63,3 +63,7 @@ If you have this project locally, you need to add a file called `.env` with thos
 ### Running the bot
 
 To run the bot locally, just run `main.py`.
+
+## Contributing
+
+You can contribute to this project. You can find more information in [CONTRIBUTING.md](https://github.com/antoinebrunet1/word-reactor/blob/main/CONTRIBUTING.md).
