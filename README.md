@@ -38,7 +38,7 @@ The `unit-tests` job checks the following points:
 
 ## Demo
 
-![Image](https://github.com/user-attachments/assets/37115418-6ed5-49a3-9810-102af170b09a)
+![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
 
 ## Usage instructions
 
