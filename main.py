@@ -10,7 +10,8 @@ import webserver
 load_dotenv()
 
 # token = os.getenv("TOKEN")
-token = os.environ["TOKEN"]
+if __name__ == "__main__":
+    token = os.environ["TOKEN"]
 
 # if __name__ == "__main__":
 #     server_id = os.getenv("SERVER_ID")
