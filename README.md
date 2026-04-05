@@ -25,21 +25,6 @@
 
 <hr>
 
-## Usage instructions
-
-It contains 1 slash command named `react` that takes two parameters:
-
-1. `message_id`
-2. `word`
-
-`message_id` is the ID of the message you want the bot to react to. It can be copied from the same contextual menu used to reply to a message.
-
-`word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
-
-### Demo
-
-![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
-
 ## Local setup instructions
 
 1. Create a bot on Discord's website.
@@ -56,3 +41,18 @@ It contains 1 slash command named `react` that takes two parameters:
    1. `TOKEN` (Your bot token)
    2. `SERVER_ID` (The ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.)
 4. Use the latest release of this code to run the bot by running `main.py`.
+
+## Usage instructions
+
+It contains 1 slash command named `react` that takes two parameters:
+
+1. `message_id`
+2. `word`
+
+`message_id` is the ID of the message you want the bot to react to. It can be copied from the same contextual menu used to reply to a message.
+
+`word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
+
+### Demo
+
+![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
