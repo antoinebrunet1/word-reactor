@@ -3,6 +3,11 @@
 </h1>
 
 <p align="center">
+  <em>Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters</em>
+  <br>
+</p>
+
+<p align="center">
   <a href="CONTRIBUTING.md">Contributing guidelines</a>
   ·
   <a href="https://github.com/antoinebrunet1/word-reactor/issues">Submit an issue</a>
@@ -19,8 +24,6 @@
 </div>
 
 <hr>
-
-## Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters
 
 ### Slash command
 
