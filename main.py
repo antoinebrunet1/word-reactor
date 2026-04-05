@@ -13,6 +13,7 @@ load_dotenv()
 if __name__ == "__main__":
     token = os.environ["TOKEN"]
 
+
 # if __name__ == "__main__":
 #     server_id = os.getenv("SERVER_ID")
 # else:
@@ -38,6 +39,7 @@ class Client(commands.Bot):
 intents = discord.Intents.default()
 intents.message_content = True
 client = Client(command_prefix="!", intents=intents)
+
 
 # GUILD_ID = discord.Object(id=server_id)
 
