@@ -55,6 +55,8 @@ The code uses these dependencies:
 7. `pytest-asyncio`
 8. `pytest-cov`
 
+All these dependencies can be installed using pip.
+
 ### `.env` file
 
 If you have this project locally, you need to add a file called `.env` with those 2 properties:
