@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![Main](https://github.com/antoinebrunet1/word-reactor/actions/workflows/main.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/main.yml)
+[![Build](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml)
 
 </div>
 
