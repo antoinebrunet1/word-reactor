@@ -2,6 +2,16 @@
     🤖 Word Reactor 🤖
 </h1>
 
+<p align="center">
+  <a href="CONTRIBUTING.md">Contributing guidelines</a>
+  ·
+  <a href="https://github.com/antoinebrunet1/word-reactor/issues">Submit an issue</a>
+  ·
+  <a href="https://github.com/antoinebrunet1/word-reactor/discussions">Ask a question</a>
+  <br>
+  <br>
+</p>
+
 <div align="center">
 
 [![Build](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml)
