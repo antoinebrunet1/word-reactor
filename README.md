@@ -55,7 +55,7 @@ The `unit-tests` job checks the following points:
 
 ## Setup instructions
 
-I created this bot on Discord. You can create one too and use this code to run it by running `main.py`.
+You can create a bot on Discord's website and use this code to run it by running `main.py`.
 
 ### Dependencies
 
