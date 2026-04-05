@@ -3,8 +3,6 @@
 </h1>
 
 <p align="center">
-  <img src="logo.png" alt="logo" width="120px" height="120px"/>
-  <br>
   <em>Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters</em>
   <br>
 </p>
