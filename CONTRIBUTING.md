@@ -2,7 +2,7 @@ Thank you for you contributing to the project!
 
 # Code of conduct
 
-The code of conduct is available in the root folder of the repository.
+There is a [code of conduct](https://github.com/antoinebrunet1/word-reactor/blob/main/CODE_OF_CONDUCT.md).
 
 # Issues
 
