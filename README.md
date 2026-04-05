@@ -53,7 +53,7 @@ The `unit-tests` job checks the following points:
 
 ![Image](https://github.com/user-attachments/assets/7e0b7b9a-53ad-498a-b82f-fc83b96bdf14)
 
-## Usage instructions
+## Setup instructions
 
 I created this bot on Discord. You can create one too and use this code to run it.
 
