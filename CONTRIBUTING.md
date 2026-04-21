@@ -12,7 +12,7 @@ You can look at open issues or create a new one by choosing from the 3 available
 
 ## Pull requests
 
-You can make pull requests.
+You can make pull requests. Before creating a pull request, please recreate the GitHub Actions pipeline.
 
 ## Support
 
