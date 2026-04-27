@@ -30,7 +30,10 @@
 ## Local setup instructions
 
 1. Create a bot on Discord's website.
-2. Run the following command: `python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov`.
+2. Run the following command:
+   ```
+   python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov
+   ```
 3. Fork the repository.
 4. Uncomment all the commented out code and comment out the `token = ...` line that does not use `gentenv`.
 5. Add a **non-public** file called `.env` with those 2 properties:
@@ -40,7 +43,7 @@
 
 ## Usage instructions
 
-You can add the bot to your server using this link: https://discord.com/oauth2/authorize?client_id=1488295878849597581.
+You can add the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1488295878849597581).
 
 It contains 1 slash command named `react` that takes two parameters:
 
