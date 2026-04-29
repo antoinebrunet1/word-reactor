@@ -56,4 +56,4 @@ It contains 1 slash command named `react` that takes two parameters:
 
 ### Demo
 
-<img src="https://github.com/user-attachments/assets/cc2319f2-8457-4c40-bdee-43421ca23875" alt="demo" style="border-radius:25px"/>
+<img src="demo.gif" alt="demo"/>
