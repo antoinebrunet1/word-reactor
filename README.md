@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="logo.gif" alt="logo" width="120px" height="120px"/>
+  <img src="images/logo.gif" alt="logo" width="120px" height="120px"/>
   <br>
   <em>Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters</em>
   <br>
@@ -56,4 +56,4 @@ It contains 1 slash command named `react` that takes two parameters:
 
 ### Demo
 
-<img src="demo.gif" alt="demo"/>
+<img src="images/demo.gif" alt="demo"/>
