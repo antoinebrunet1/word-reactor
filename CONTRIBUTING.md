@@ -25,7 +25,7 @@ You can make pull requests. Before creating a pull request, please recreate the 
 
 ### 💻 Recreating the GitHub Actions pipeline locally 💻
 
-#### Documentation
+#### 📖 Documentation 📖
 
 Please make sure that the pydoc documentation is valid by running the command
 
@@ -35,7 +35,7 @@ pydocstyle main.py
 
 The output of the command will indicate if the documentation is valid or not. If it is not, the issues will be explained.
 
-#### Unit tests
+#### 🧪 Unit tests 🧪
 
 Please make sure that the unit tests pass by running the command
 
