@@ -54,6 +54,6 @@ It contains 1 slash command named `react` that takes two parameters:
 
 `word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
 
-### Demo
+### ▶️ Demo ▶️
 
 <img src="images/demo.gif" alt="demo"/>

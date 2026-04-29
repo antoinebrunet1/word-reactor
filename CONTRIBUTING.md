@@ -23,7 +23,7 @@ You can look at open issues or create a new one by choosing from the 3 available
 
 You can make pull requests. Before creating a pull request, please recreate the GitHub Actions pipeline as explained below.
 
-### Recreating the GitHub Actions pipeline locally
+### 💻 Recreating the GitHub Actions pipeline locally 💻
 
 #### Documentation
 
