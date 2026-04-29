@@ -1,6 +1,15 @@
-# Contributing
+<h1 align="center">
+    Contributing
+</h1>
 
-Thank you for you contributing to the project!
+<p align="center">
+  <img src="collaboration.jpg" alt="logo" width="=450px" height="300px"/>
+  <br>
+  Thank you for contributing to the project!
+  <br>
+</p>
+
+<hr>
 
 ## Code of conduct
 
