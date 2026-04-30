@@ -5,7 +5,7 @@
 <p align="center">
   <img src="images/collaboration.png" alt="logo" width="=450px" height="300px"/>
   <br>
-  <strong>Thank you for contributing to the project!</strong>
+  Thank you for contributing to the project! 😊
   <br>
 </p>
 
