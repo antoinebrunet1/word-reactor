@@ -52,7 +52,7 @@ It contains 1 slash command named `react` that takes two parameters:
 
 `message_id` is the ID of the message you want the bot to react to. It can be copied from the same contextual menu used to reply to a message.
 
-`word` is the word you want the bot to react with. It should contain only A-Z letters. The case is not important. No letter should repeat.
+`word` is the word you want the bot to react with. No letter should repeat.
 
 ### ▶️ Demo ▶️
 
