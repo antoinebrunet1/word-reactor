@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="images/security.png" alt="logo" height="300px"/>
+  <img src="images/security.jpg" alt="logo" height="300px"/>
   <br>
 </p>
 
