@@ -57,3 +57,13 @@ It contains 1 slash command named `react` that takes two parameters:
 ### ▶️ Demo ▶️
 
 <img src="images/demo.gif" alt="demo"/>
+
+## ✔️ Code quality ✔️
+
+The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to indicate if the code meets the below quality checks or not.
+
+1. The pydoc documentation is valid.
+2. The unit tests pass.
+3. The coverage of the unit tests is at least 80%.
+
+[In the contributing section of this repository, I explain how to recreate the GitHub Actions pipeline locally.](https://github.com/antoinebrunet1/word-reactor?tab=contributing-ov-file#-recreating-the-github-actions-pipeline-locally-)
