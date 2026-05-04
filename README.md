@@ -23,6 +23,8 @@
 
 [![Build](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml)
 
+[![cov](https://antoinebrunet1.github.io/word-reactor/badges/coverage.svg)](https://github.com/antoinebrunet1/word-reactor/actions)
+
 </div>
 
 <hr>
