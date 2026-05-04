@@ -42,7 +42,7 @@ jobs:
       - name: Coverage is at least 80%
         run: |
           python3 -m pip install pytest-cov
-          python3 -m pytest --cov=main --cov-fail-under=80
+          python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json
 
       - name: Update Coverage Badge
         # GitHub actions: default branch variable
