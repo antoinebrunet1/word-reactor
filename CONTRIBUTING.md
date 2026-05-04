@@ -3,8 +3,6 @@
 </h1>
 
 <p align="center">
-  <img src="images/collaboration.jpg" alt="logo" width="=450px" height="300px"/>
-  <br>
   Thank you for contributing to the project! 😊
   <br>
 </p>
