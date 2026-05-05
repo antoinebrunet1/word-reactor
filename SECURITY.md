@@ -2,8 +2,6 @@
     🛡️ Security Policy 🛡️
 </h1>
 
-<hr>
-
 ## ✅ Supported Versions ✅
 
 All versions are supported.
