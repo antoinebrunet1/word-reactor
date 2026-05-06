@@ -11,7 +11,7 @@
 
 ## 📜 Code of conduct 📜
 
-There is a [code of conduct](https://github.com/antoinebrunet1/word-reactor/blob/main/CODE_OF_CONDUCT.md).
+There is a <a href="https://github.com/antoinebrunet1/word-reactor/blob/main/CODE_OF_CONDUCT.md" target="_blank">code of conduct</a>.
 
 ## 📝 Issues 📝
 
