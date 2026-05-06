@@ -47,6 +47,8 @@
    2. `SERVER_ID` (The ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.)
 6. Run the bot by running `main.py`.
 
+:warning: **Warning:** Do not push `.env`.
+
 ## 📖 Usage instructions 📖
 
 You can add the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1488295878849597581).
