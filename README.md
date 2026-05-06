@@ -51,7 +51,7 @@
 
 ## 📖 Usage instructions 📖
 
-You can add the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1488295878849597581).
+You can add the bot to your server using <a href="https://discord.com/oauth2/authorize?client_id=1488295878849597581" target="_blank">this link</a>.
 
 It contains 1 slash command named `react` that takes two parameters:
 
