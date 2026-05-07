@@ -11,7 +11,7 @@
 <p align="center">
   <img src="images/logo.gif" alt="logo" width="120px" height="120px"/>
   <br>
-  <em>Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters</em>
+  <b>Discord chatbot in Python that reacts to indicated messages with given words formed with emoji letters</b>
   <br>
 </p>
 
