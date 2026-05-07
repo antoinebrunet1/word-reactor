@@ -27,7 +27,7 @@
 
 <div align="center">
 
-[![Build](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml) [![cov](https://antoinebrunet1.github.io/word-reactor/badges/coverage.svg)](https://github.com/antoinebrunet1/word-reactor/actions)
+[![Build](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml/badge.svg)](https://github.com/antoinebrunet1/word-reactor/actions/workflows/build.yml) [![cov](https://antoinebrunet1.github.io/word-reactor/badges/coverage.svg)](https://github.com/antoinebrunet1/word-reactor/actions) ![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54)
 
 </div>
 
