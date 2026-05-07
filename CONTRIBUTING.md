@@ -29,6 +29,20 @@ You can make pull requests. Before creating a pull request, please recreate the 
 
 ### 💻 Recreating the GitHub Actions pipeline locally 💻
 
+#### 📐 Style 📐
+
+Please make sure the <a href="https://pypi.org/project/black/" target="_blank">Black</a> style is followed. You can apply the style to all files by running the command
+
+```
+python3 -m black .
+```
+
+and you can check if the style is followed in all files by running the command
+
+```
+python3 -m black --check .
+```
+
 #### 📖 Documentation 📖
 
 Please make sure that the pydoc documentation is valid by running the command
