@@ -13,7 +13,6 @@ jobs:
 
       - name: Style
         run: |
-          python3 -m pip install black
           python3 -m black --check .
 
   documentation:
@@ -26,7 +25,6 @@ jobs:
 
       - name: Documentation
         run: |
-          python3 -m pip install pydocstyle
           pydocstyle main.py
 
   unit-tests:
@@ -39,10 +37,8 @@ jobs:
 
       - name: All unit tests pass
         run: |
-          python3 -m pip install discord.py pytest pytest-mock python-dotenv pytest-asyncio flask
           python3 -m pytest
 
       - name: Coverage is at least 80%
         run: |
-          python3 -m pip install pytest-cov
           python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json
