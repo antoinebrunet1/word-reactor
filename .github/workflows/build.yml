@@ -6,6 +6,7 @@ jobs:
   style:
     name: Style
     runs-on: ubuntu-latest
+    container: antoinebrunet1/word_reactor_pipeline
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
