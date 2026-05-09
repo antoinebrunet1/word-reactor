@@ -71,9 +71,10 @@ It contains 1 slash command named `react` that takes two parameters:
 
 The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to indicate if the code meets the below quality checks or not.
 
-1. The pydoc documentation is valid.
-2. The unit tests pass.
-3. The coverage of the unit tests is at least 80%.
+1. The <a href="https://pypi.org/project/black/" target="_blank">Black</a> style is respected for every Python file.
+2. The pydoc documentation is valid.
+3. The unit tests pass.
+4. The coverage of the unit tests is at least 80%.
 
 <a href="https://github.com/antoinebrunet1/word-reactor?tab=contributing-ov-file#-recreating-the-github-actions-pipeline-locally-" target="_blank">In the contributing section of this repository, I explain how to recreate the GitHub Actions pipeline locally.</a>
 
