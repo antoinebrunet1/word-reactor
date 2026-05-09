@@ -76,3 +76,7 @@ The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to
 3. The coverage of the unit tests is at least 80%.
 
 <a href="https://github.com/antoinebrunet1/word-reactor?tab=contributing-ov-file#-recreating-the-github-actions-pipeline-locally-" target="_blank">In the contributing section of this repository, I explain how to recreate the GitHub Actions pipeline locally.</a>
+
+## 🐋 Docker 🐋
+
+This repository uses a custom Docker image located on Docker Hub for every job of the GitHub Actions pipeline. That image has been built using the `Dockerfile` file located at the root of this repository before being pushed to Docker Hub. The reason for using this custom image instead of `ubuntu:latest` is that the custom image already has the `pip` dependencies installed which means that they do not need to be installed every time the pipeline runs.
