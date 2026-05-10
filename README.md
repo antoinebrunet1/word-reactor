@@ -93,7 +93,3 @@ This repository uses a custom Docker image located on Docker Hub for every job o
 ## 🌐 Hosting 🌐
 
 This bot is hosted using Render. UptimeRobot is used to keep it alive.
-
-## 🎨 Bot's logo 🎨
-
-The logo (without the rotating border) was created using Canva.
