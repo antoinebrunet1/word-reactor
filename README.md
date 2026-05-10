@@ -82,6 +82,10 @@ The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to
 
 This project uses Dependabot to automatically open PRs for security issues and also for general library version updates.
 
+## 🔒 `main` branch protection 🔒
+
+The `main` branch is protected by a ruleset called "No deletions and force push for main".
+
 ## 🐋 Docker 🐋
 
 This repository uses a custom Docker image located on Docker Hub for every job of the GitHub Actions pipeline. That image has been built using the `Dockerfile` file located at the root of this repository before being pushed to Docker Hub. The reason for using this custom image instead of `ubuntu:latest` is that the custom image already has the `pip` dependencies installed which means that they do not need to be installed every time the pipeline runs.
