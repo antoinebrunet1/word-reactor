@@ -51,7 +51,7 @@ jobs:
       - name: Coverage is at least 80%
         id: cov
         run: python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json && \
-          echo "::set-output name=cov::$(cat *coverage*.json)"
+          printf "::set-output name=cov::$(cat *coverage*.json)"
 
   cov-badge:
     name: Update Coverage Badge
