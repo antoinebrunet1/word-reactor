@@ -37,7 +37,7 @@ jobs:
         run: python3 -m pytest
 
   unit-tests-cov:
-    name: Unit tests
+    name: Unit tests coverage
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
