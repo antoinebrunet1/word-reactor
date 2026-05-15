@@ -72,7 +72,7 @@ This file was added for hosting purposes. It contains all the dependencies of th
 
 :warning: **Warning:** Do not push `.env`.
 
-## 📖 Usage instructions 📖
+## ⚙️ Usage instructions ⚙️
 
 You can add the bot to your server using <a href="https://discord.com/oauth2/authorize?client_id=1488295878849597581" target="_blank">this link</a>.
 
