@@ -40,19 +40,19 @@
 
 Only certain folders and files are explained.
 
-### `.github/workflows/build.yml`
+### [`.github/workflows/build.yml`](https://github.com/antoinebrunet1/word-reactor/blob/main/.github/workflows/build.yml)
 
 This is the GitHub Actions configuration file.
 
-### `images`
+### [`images`](https://github.com/antoinebrunet1/word-reactor/tree/main/images)
 
 This folder contains images that are in `README.md`.
 
-### Python files
+### [Python files](https://github.com/search?q=repo%3Aantoinebrunet1%2Fword-reactor+path%3A*.py&type=code)
 
 `test_main.py` contains the unit tests. `webserver.py` contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in `main.py`.
 
-### `requirements.txt`
+### [`requirements.txt`](https://github.com/antoinebrunet1/word-reactor/blob/main/requirements.txt)
 
 This file was added for hosting purposes. It contains all the dependencies of the project.
 
