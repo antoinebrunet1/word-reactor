@@ -100,7 +100,7 @@ The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to
 
 <a href="https://github.com/antoinebrunet1/word-reactor?tab=contributing-ov-file#-recreating-the-github-actions-pipeline-locally-" target="_blank">In the contributing section of this repository, I explain how to recreate the GitHub Actions pipeline locally.</a>
 
-## 🛡️ Dependabot 🛡️
+## 🛡️ All dependencies' safety guarantied 🛡️
 
 This project uses Dependabot to automatically open PRs for security issues and also for general library version updates.
 
