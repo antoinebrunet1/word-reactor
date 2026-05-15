@@ -40,9 +40,7 @@
 
 Only certain folders and files are explained.
 
-### `.github`
-
-#### `workflows`
+### `.github/workflows`
 
 This folder contains the GitHub Actions file (`build.yml`).
 
