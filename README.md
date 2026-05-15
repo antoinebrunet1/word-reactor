@@ -58,6 +58,10 @@ This folder contains images that are in `README.md`.
 
 `test_main.py` contains the unit tests. `webserver.py` contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in `main.py`.
 
+### `requirements.txt`
+
+This file was added for hosting purposes. It contains all the dependencies of the project.
+
 ## 💻 Local setup instructions 💻
 
 1. Create a bot on Discord's website.
