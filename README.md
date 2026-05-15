@@ -54,6 +54,10 @@ This is the Dependabot file.
 
 This folder contains images that are in `README.md`.
 
+### Python files
+
+`test_main.py` contains the unit tests. `webserver.py` contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in `main.py`.
+
 ## 💻 Local setup instructions 💻
 
 1. Create a bot on Discord's website.
