@@ -54,7 +54,7 @@ This is the Dependabot file.
 
 ### `images`
 
-This folder contains all the images in `README.md`.
+This folder contains images that are in `README.md`.
 
 ## 💻 Local setup instructions 💻
 
