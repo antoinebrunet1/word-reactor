@@ -89,7 +89,7 @@ It contains 1 slash command named `react` that takes two parameters:
 
 <img src="images/demo.gif" alt="demo"/>
 
-## ✅ Code quality ✅
+## ✨ How code quality is guarantied ✨
 
 The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to indicate if the code meets the below quality checks or not.
 
