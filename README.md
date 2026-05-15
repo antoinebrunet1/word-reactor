@@ -38,6 +38,8 @@
 
 ## 📂 Structure 📂
 
+Only certain folders and files are explained.
+
 ### `.github` folder
 
 #### `workflows`
