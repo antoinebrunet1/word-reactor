@@ -44,7 +44,7 @@
 
 <hr>
 
-## 📂 Structure 📂
+## 📂 Codebase overview 📂
 
 Only certain folders and files are explained.
 
