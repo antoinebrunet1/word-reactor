@@ -52,6 +52,10 @@ This folder contains the GitHub Actions file (`build.yml`).
 
 This is the Dependabot file.
 
+### `images`
+
+This folder contains all the images in `README.md`.
+
 ## 💻 Local setup instructions 💻
 
 1. Create a bot on Discord's website.
