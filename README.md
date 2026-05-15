@@ -46,10 +46,6 @@ Only certain folders and files are explained.
 
 This folder contains the GitHub Actions file (`build.yml`).
 
-#### `dependabot.yml`
-
-This is the Dependabot file.
-
 ### `images`
 
 This folder contains images that are in `README.md`.
