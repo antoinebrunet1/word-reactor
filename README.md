@@ -40,15 +40,15 @@
 
 ### `.github` folder
 
-#### `ISSUE_TEMPLATE` folder
+#### `ISSUE_TEMPLATE`
 
 This folder contains three issue templates.
 
-#### `workflows` folder
+#### `workflows`
 
 This folder contains the GitHub Actions file (`build.yml`).
 
-#### `dependabot.yml` file
+#### `dependabot.yml`
 
 This is the Dependabot file.
 
