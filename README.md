@@ -36,6 +36,22 @@
 
 <hr>
 
+## 📂 Structure 📂
+
+### `.github` folder
+
+#### `ISSUE_TEMPLATE` folder
+
+This folder contains three issue templates.
+
+#### `workflows` folder
+
+This folder contains the GitHub Actions file (`build.yml`).
+
+#### `dependabot.yml` file
+
+This is the Dependabot file.
+
 ## 💻 Local setup instructions 💻
 
 1. Create a bot on Discord's website.
