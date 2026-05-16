@@ -11,8 +11,8 @@ load_dotenv()
 
 env = os.getenv("ENV", default="dev")
 
-if __name__ == "__main__":
-    token = os.getenv("TOKEN")  # pragma: no cover
+if __name__ == "__main__": # pragma: no cover
+    token = os.getenv("TOKEN")
     if env == "dev":
         server_id = os.getenv("SERVER_ID")
 else:
