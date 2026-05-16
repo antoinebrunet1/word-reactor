@@ -67,7 +67,7 @@ This file was added for hosting purposes. It contains all the dependencies of th
 4. Uncomment all the commented out code and comment out the `token = ...` line that does not use `gentenv`.
 5. Add a **non-public** file called `.env` with those 2 properties:
    1. `TOKEN` (Your bot token)
-   2. `SERVER_ID` (The ID of your server. You can set up the code not to use `SERVER_ID` if you are not in the process of testing the `react` slash command.)
+   2. `SERVER_ID` (The ID of your server)
 6. Run the bot by running `main.py`.
 
 :warning: **Warning:** Do not push `.env`.
