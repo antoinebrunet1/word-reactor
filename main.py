@@ -10,7 +10,8 @@ import webserver
 load_dotenv()
 
 # token = os.getenv("TOKEN")
-token = os.environ["TOKEN"]  # pragma: no cover
+if __name__ == "__main__":
+    token = os.environ["TOKEN"]  # pragma: no cover
 
 
 # if __name__ == "__main__":
@@ -106,6 +107,6 @@ def letter_to_letter_emoji(letter):
     # 0x1F1E6 is the Unicode of the emoji letter for the letter A.
     return chr(0x1F1E6 + offset)
 
-
+if __name__ == "__main__":
     webserver.keep_alive()  # pragma: no cover
     client.run(token)  # pragma: no cover
