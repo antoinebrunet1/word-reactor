@@ -9,9 +9,8 @@ import webserver
 
 load_dotenv()
 
-# token = os.getenv("TOKEN")
 if __name__ == "__main__":
-    token = os.environ["TOKEN"]  # pragma: no cover
+    token = os.getenv("TOKEN")  # pragma: no cover
 
 
 # if __name__ == "__main__":
