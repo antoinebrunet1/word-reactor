@@ -23,9 +23,9 @@ else:
 class Client(commands.Bot):
     """The Client class of the bot."""
 
-    async def on_ready(self):
+    async def on_ready(self):  # pragma: no cover
         """Is run when the bot starts."""
-        print(f"Logged on as {self.user}!")  # pragma: no cover
+        print(f"Logged on as {self.user}!")
 
         if env == "dev":
             try:
