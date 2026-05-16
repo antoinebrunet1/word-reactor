@@ -11,7 +11,7 @@ load_dotenv()
 
 # token = os.getenv("TOKEN")
 if __name__ == "__main__":
-    token = os.environ["TOKEN"]
+    token = os.environ["TOKEN"] # pragma: no cover
 
 
 # if __name__ == "__main__":
@@ -25,7 +25,7 @@ class Client(commands.Bot):
 
     async def on_ready(self):
         """Is run when the bot starts."""
-        print(f"Logged on as {self.user}!")
+        print(f"Logged on as {self.user}!") # pragma: no cover
 
         # try:
         #     guild = discord.Object(id=server_id)
@@ -109,5 +109,5 @@ def letter_to_letter_emoji(letter):
 
 
 if __name__ == "__main__":
-    webserver.keep_alive()
-    client.run(token)
+    webserver.keep_alive() # pragma: no cover
+    client.run(token) # pragma: no cover
