@@ -47,7 +47,6 @@ jobs:
         run: |
           python3 -m pip install pytest-cov discord.py pytest pytest-mock python-dotenv pytest-asyncio flask
           python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json
-          echo "::set-output name=cov::$(cat *coverage*.json)"
 
       - name: Update Coverage Badge
         # GitHub actions: default branch variable
