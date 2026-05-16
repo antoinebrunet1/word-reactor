@@ -9,14 +9,15 @@ import webserver
 
 load_dotenv()
 
+env = os.getenv("ENV", default="dev")
+
 if __name__ == "__main__":
     token = os.getenv("TOKEN")  # pragma: no cover
-
-
-# if __name__ == "__main__":
-#     server_id = os.getenv("SERVER_ID")
-# else:
-#     server_id = "0"
+    if env == "dev":
+        server_id = os.getenv("SERVER_ID")
+else:
+    if env == "dev":
+        server_id = "0"
 
 
 class Client(commands.Bot):
@@ -26,13 +27,14 @@ class Client(commands.Bot):
         """Is run when the bot starts."""
         print(f"Logged on as {self.user}!")  # pragma: no cover
 
-        # try:
-        #     guild = discord.Object(id=server_id)
-        #     synced = await self.tree.sync(guild=guild)
-        #     print(f"Synced {len(synced)} commands to guild {guild.id}")
-        #
-        # except Exception as e:
-        #     print(f"Error syncing commands: {e}")
+        if env == "dev":
+            try:
+                guild = discord.Object(id=server_id)
+                synced = await self.tree.sync(guild=guild)
+                print(f"Synced {len(synced)} commands to guild {guild.id}")
+
+            except Exception as e:
+                print(f"Error syncing commands: {e}")
 
 
 intents = discord.Intents.default()
@@ -40,13 +42,16 @@ intents.message_content = True
 client = Client(command_prefix="!", intents=intents)
 
 
-# GUILD_ID = discord.Object(id=server_id)
+if env == "dev":
+    GUILD_ID = discord.Object(id=server_id)
+else:
+    GUILD_ID = None
 
 
 @client.tree.command(
     name="react",
     description="Make the bot react to a message with a word formed with letters emojis.",
-    # guild=GUILD_ID,
+    guild=GUILD_ID,
 )
 async def react(interaction: discord.Interaction, message_id: str, word: str):
     """
