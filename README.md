@@ -64,11 +64,12 @@ This file was added for hosting purposes. It contains all the dependencies of th
    python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov
    ```
 3. Fork the repository.
-4. Uncomment all the commented out code and comment out the `token = ...` line that does not use `gentenv`.
-5. Add a **non-public** file called `.env` with those 2 properties:
-   1. `TOKEN` (Your bot token)
-   2. `SERVER_ID` (The ID of your server)
-6. Run the bot by running `main.py`.
+4. Add a **non-public** file called `.env`:
+    ```
+    TOKEN={Your bot token}
+    SERVER_ID={Your server ID}
+    ```
+5. Run the bot by running `main.py`.
 
 :warning: **Warning:** Do not push `.env`.
 
