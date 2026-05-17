@@ -25,17 +25,6 @@ jobs:
       - name: Documentation
         run: pydocstyle main.py
 
-  unit-tests:
-    name: Unit tests
-    runs-on: ubuntu-latest
-    container: antoinebrunet1/word_reactor_pipeline
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: All unit tests pass
-        run: python3 -m pytest
-
   unit-tests-cov:
     name: Unit tests coverage
     runs-on: ubuntu-latest
