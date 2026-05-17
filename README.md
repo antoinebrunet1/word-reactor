@@ -9,7 +9,7 @@
 </h1>
 
 <p align="center">
-  <img src="images/logo.gif" alt="logo" width="120px" height="120px"/>
+  <img src="images/readme/logo.gif" alt="logo" width="120px" height="120px"/>
   <br>
   ⚡ <b>Python Discord bot that reacts to messages with given words using emoji letters</b> ⚡
   <br>
@@ -88,7 +88,7 @@ It contains 1 slash command named `react` that takes two parameters:
 
 ### ▶️ Demo ▶️
 
-<img src="images/demo.gif" alt="demo"/>
+<img src="images/readme/demo.gif" alt="demo"/>
 
 ## ✨ Code quality guarantied ✨
 
