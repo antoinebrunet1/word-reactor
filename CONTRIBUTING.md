@@ -53,13 +53,7 @@ pydocstyle main.py
 
 The output of the command will indicate if the documentation is valid or not. If it is not, the issues will be explained.
 
-#### 🧪 Unit tests 🧪
-
-Please make sure that the unit tests pass by running the command
-
-```
-python3 -m pytest
-```
+#### 🧪 Unit tests coverage 🧪
 
 Please make sure that the coverage is at least 80% by running the command
 
