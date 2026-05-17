@@ -17,9 +17,9 @@
 
 <p align="center">
   <a href="CONTRIBUTING.md" target="_blank">Contributing guidelines</a>
-  │
+  ✦
   <a href="https://github.com/antoinebrunet1/word-reactor/issues" target="_blank">Submit an issue</a>
-  │
+  ✦
   <a href="https://github.com/antoinebrunet1/word-reactor/discussions" target="_blank">Ask a question</a>
   <br>
   <br>
