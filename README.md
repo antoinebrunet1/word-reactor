@@ -38,8 +38,6 @@
 
 ## 📂 Codebase overview 📂
 
-Only certain folders and files are explained.
-
 ### [`.github/workflows/build.yml`](.github/workflows/build.yml)
 
 This is the GitHub Actions configuration file.
