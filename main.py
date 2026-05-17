@@ -16,7 +16,7 @@ if __name__ == "__main__":  # pragma: no cover
     if env == "dev":
         server_id = os.getenv("SERVER_ID")
 elif env == "dev":
-        server_id = "0"
+    server_id = "0"
 
 
 class Client(commands.Bot):
