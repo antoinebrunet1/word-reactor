@@ -15,8 +15,7 @@ if __name__ == "__main__":  # pragma: no cover
     token = os.getenv("BOT_TOKEN")
     if env == "dev":
         server_id = os.getenv("SERVER_ID")
-else:
-    if env == "dev":
+elif env == "dev":
         server_id = "0"
 
 
