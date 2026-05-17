@@ -58,11 +58,13 @@ This file was added for hosting purposes. It contains all the dependencies of th
 
 1. Create a bot on Discord's website. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6).
 2. Run the following command to install the pip dependencies:
+
    ```
    python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov
    ```
 3. Fork the repository.
 4. Add a **non-public** file called `.env` with this content:
+
     ```
     BOT_TOKEN=your_bot_token
     SERVER_ID=your_server_ID
