@@ -59,7 +59,7 @@ This file was added for hosting purposes. It contains all the dependencies of th
 ## 💻 Local setup 💻
 
 1. Create a bot on Discord's website. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6).
-2. Run the following command:
+2. Run the following command to install the pip dependencies:
    ```
    python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov
    ```
