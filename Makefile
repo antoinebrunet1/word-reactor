@@ -3,6 +3,9 @@ check_cov_cmd = python3 -m pytest --cov=main --cov-fail-under=80
 run:
 	python3 main.py
 
+run_all_tests:
+	python3 -m pytest test_main.py
+
 style_all_files:
 	python3 -m black .
 
