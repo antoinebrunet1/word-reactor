@@ -1,3 +1,5 @@
+check_cov_cmd = python3 -m pytest --cov=main --cov-fail-under=80
+
 run:
 	python3 main.py
 
@@ -11,7 +13,7 @@ check_docs:
 	pydocstyle main.py
 
 check_cov:
-	python3 -m pytest --cov=main --cov-fail-under=80
+	$(check_cov_cmd)
 
 check_cov_with_report:
-	python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json
+	$(check_cov_cmd) --cov-report json
