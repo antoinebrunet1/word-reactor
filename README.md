@@ -34,6 +34,10 @@
 
 <hr>
 
+## 📚 Documentation 📚
+
+The documentation of `main.py` is available at [this link](https://antoinebrunet1.github.io/word-reactor/).
+
 ## 📂 Codebase overview 📂
 
 ### [`.github/workflows/build.yml`](.github/workflows/build.yml)
