@@ -65,7 +65,7 @@ This file was added for hosting purposes. It contains all the dependencies of th
     BOT_TOKEN=
     SERVER_ID=
     ```
-   Put your values to the right of the two `=`.
+   Put your values to the right of the two `=`. The first value is the token of the bot you created in step 1. The second value is the ID of a server you want to test your bot on. You need to add your bot to that server.
 5. Run the bot by running `main.py`.
 
 :warning: **Warning:** Do not push `.env` because it contains your bot token.
