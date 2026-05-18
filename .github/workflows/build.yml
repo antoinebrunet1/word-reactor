@@ -42,3 +42,13 @@ jobs:
         # https://stackoverflow.com/questions/64781462/github-actions-default-branch-variable
         if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
         uses: we-cli/coverage-badge-action@main
+
+  generate_docs:
+    name: Generate docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Generate docs
+        run: make generate_docs
