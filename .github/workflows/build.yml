@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Documentation
-        run: pydocstyle main.py
+        run: make check_docs
 
   unit-tests-cov:
     name: Unit tests coverage
