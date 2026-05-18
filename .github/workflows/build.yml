@@ -52,5 +52,5 @@ jobs:
 
       - name: Generate docs
         run: |
-          python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov pdoc
+          python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov pdoc flask
           make generate_docs
