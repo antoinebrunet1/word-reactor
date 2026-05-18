@@ -12,3 +12,6 @@ check_docs:
 
 check_cov:
 	python3 -m pytest --cov=main --cov-fail-under=80
+
+check_cov_with_report:
+	python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json
