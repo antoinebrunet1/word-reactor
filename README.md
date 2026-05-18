@@ -34,7 +34,7 @@
 
 <hr>
 
-## 📚 Documentation 📚
+## 📚 `main.py` documentation 📚
 
 The documentation of `main.py` is available at [this link](https://antoinebrunet1.github.io/word-reactor/).
 
