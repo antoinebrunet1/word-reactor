@@ -75,7 +75,7 @@ You can also run the command
 make check_cov_with_report
 ```
 
-which use `Makefile`.
+which uses `Makefile`.
 
 To run all the unit tests, you can run the command
 
@@ -89,7 +89,7 @@ You can also run the command
 make run_all_tests
 ```
 
-which use `Makefile`.
+which uses `Makefile`.
 
 If you are using PyCharm, you can also right-click on `test_main.py` and select the option to run all the tests.
 
