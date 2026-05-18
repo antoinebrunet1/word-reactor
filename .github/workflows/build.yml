@@ -51,4 +51,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Generate docs
-        run: make generate_docs
+        run: |
+          python3 -m pip install pdoc
+          make generate_docs
