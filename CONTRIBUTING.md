@@ -61,6 +61,22 @@ Please make sure that the coverage is at least 80% by running the command
 python3 -m pytest --cov=main --cov-fail-under=80
 ```
 
+To see the missed lines, you can run the command
+
+```
+python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json
+```
+
+This will produce `coverage.json` which indicates the missed lines.
+
+You can also run the command
+
+```
+make check_cov_with_report
+```
+
+which use `Makefile`.
+
 ## 💬 Support 💬
 
 If you have any questions, you can go under Discussions in the repository.
