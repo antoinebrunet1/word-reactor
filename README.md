@@ -53,20 +53,21 @@ This file was added for hosting purposes. It contains all the dependencies of th
 ## 💻 Local setup 💻
 
 1. Create a test bot on Discord's website. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6). This test bot will be used to test your local code.
-2. Run the following command to install the pip dependencies:
+2. Install Python 3.
+3. Run the following command to install the pip dependencies:
 
    ```
    python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov
    ```
-3. Fork the repository.
-4. Add a **non-public** file called `.env` with this content:
+4. Fork the repository.
+5. Add a **non-public** file called `.env` with this content:
 
     ```
     BOT_TOKEN=
     SERVER_ID=
     ```
    Put your values to the right of the two `=`. The first value is the token of the test bot. The second value is the ID of a server where you want to test your local code using the test bot. You need to add the test bot to that server. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6) to see how to add the test bot to the server.
-5. Run the bot by running `main.py`.
+6. Run the bot by running `main.py`.
 
 :warning: **Warning:** Do not push `.env` because it contains your bot token.
 
