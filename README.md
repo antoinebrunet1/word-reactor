@@ -62,8 +62,8 @@ This file was added for hosting purposes. It contains all the dependencies of th
 4. Add a **non-public** file called `.env` with this content:
 
     ```
-    BOT_TOKEN=your_bot_token
-    SERVER_ID=your_server_ID
+    BOT_TOKEN=
+    SERVER_ID=
     ```
    Put your values to the right of the two `=`.
 5. Run the bot by running `main.py`.
