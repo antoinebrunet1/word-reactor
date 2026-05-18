@@ -50,6 +50,16 @@ This is the GitHub Actions configuration file.
 
 This file was added for hosting purposes. It contains all the dependencies of the project.
 
+### [`Makefile`](Makefile)
+
+This file is used in [`.github/workflows/build.yml`](.github/workflows/build.yml) but can also be used locally.
+
+To install the `make` command on Windows, [install Chocolatey](https://chocolatey.org/install) and run the command
+
+```
+choco install make
+```
+
 ## 💻 Local setup 💻
 
 1. Create a test bot on Discord's website. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6). This test bot will be used to test your local code.
