@@ -1,3 +1,6 @@
+run:
+	python3 main.py
+
 style_all_files:
 	python3 -m black .
 
