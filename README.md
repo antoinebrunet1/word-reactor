@@ -96,8 +96,6 @@ The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to
 2. The pydoc documentation is valid.
 3. The coverage of the unit tests is at least 80%.
 
-<a href="https://github.com/antoinebrunet1/word-reactor?tab=contributing-ov-file#-recreating-the-github-actions-pipeline-locally-" target="_blank">In the contributing section of this repository, I explain how to recreate the GitHub Actions pipeline locally.</a>
-
 ## 🛡️ Safety guarantied for all the dependencies 🛡️
 
 This project uses Dependabot to automatically open PRs for security issues and also for general library version updates.
