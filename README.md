@@ -52,7 +52,7 @@ This file was added for hosting purposes. It contains all the dependencies of th
 
 ## 💻 Local setup 💻
 
-1. Create a bot on Discord's website. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6).
+1. Create a test bot on Discord's website. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6). This test bot will be used to test your local code.
 2. Run the following command to install the pip dependencies:
 
    ```
@@ -65,7 +65,7 @@ This file was added for hosting purposes. It contains all the dependencies of th
     BOT_TOKEN=
     SERVER_ID=
     ```
-   Put your values to the right of the two `=`. The first value is the token of the bot you created in step 1. The second value is the ID of a server you want to test your bot on. You need to add your bot to that server.
+   Put your values to the right of the two `=`. The first value is the token of the test bot. The second value is the ID of a server where you want to test your local code using the test bot. You need to add the test bot to that server.
 5. Run the bot by running `main.py`.
 
 :warning: **Warning:** Do not push `.env` because it contains your bot token.
