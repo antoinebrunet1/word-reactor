@@ -61,6 +61,6 @@ jobs:
 #          path: docs/
 
       - name: Deploy docs
-        uses: antoinebrunet1/github-pages-deploy-action@v4
+        uses: antoinebrunet1/word-reactor@v4
         with:
           folder: docs
