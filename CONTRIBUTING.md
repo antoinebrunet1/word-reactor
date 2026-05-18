@@ -77,6 +77,22 @@ make check_cov_with_report
 
 which use `Makefile`.
 
+To run all the unit tests, you can run the command
+
+```
+python3 -m pytest test_main.py
+```
+
+You can also run the command
+
+```
+make run_all_tests
+```
+
+which use `Makefile`.
+
+If you are using PyCharm, you can also right-click on `test_main.py` and select the option to run all the tests.
+
 ## 💬 Support 💬
 
 If you have any questions, you can go under Discussions in the repository.
