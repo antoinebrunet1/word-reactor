@@ -34,9 +34,9 @@
 
 <hr>
 
-## 📚 `main.py` documentation 📚
+## 📚 `src/main.py` documentation 📚
 
-The `main.py` documentation is available at [this link](https://antoinebrunet1.github.io/word-reactor/). It is generated and deployed as part of the GitHub Actions pipeline that is triggered on every push on the `main` branch.
+The `src/main.py` documentation is available at [this link](https://antoinebrunet1.github.io/word-reactor/). It is generated and deployed as part of the GitHub Actions pipeline that is triggered on every push on the `main` branch.
 
 ## 📂 Codebase overview 📂
 
@@ -46,7 +46,7 @@ This is the GitHub Actions configuration file.
 
 ### [Python files](https://github.com/search?q=repo%3Aantoinebrunet1%2Fword-reactor+path%3A*.py&type=code)
 
-[`test/test_main.py`](test/test_main.py) contains the unit tests. [`webserver.py`](webserver.py) contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in [`main.py`](main.py).
+[`test/test_main.py`](test/test_main.py) contains the unit tests. [`webserver.py`](webserver.py) contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in [`src/main.py`](src/main.py).
 
 ### [`requirements.txt`](requirements.txt)
 
@@ -79,7 +79,7 @@ choco install make
     SERVER_ID=
     ```
    Put your values to the right of the two `=`. The first value is the token of the test bot. The second value is the ID of a server where you want to test your local code using the test bot. You need to add the test bot to that server. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6) to see how to add the test bot to the server.
-6. Run the bot by running `main.py`.
+6. Run the bot by running `src/main.py`.
 
 :warning: **Warning:** Do not push `.env` because it contains your bot token.
 

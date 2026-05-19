@@ -56,7 +56,7 @@ which uses `Makefile`.
 Please make sure that the pydoc documentation is valid by running the command
 
 ```
-pydocstyle main.py
+pydocstyle src/main.py
 ```
 
 The output of the command will indicate if the documentation is valid or not. If it is not, the issues will be explained.
