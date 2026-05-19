@@ -33,7 +33,7 @@ def test_letter_to_letter_emoji_happy_path():
 @pytest.mark.asyncio
 async def test_react_invalid_word(mocker):
     mock_interaction = AsyncMock()
-    mocker.patch("is_word_valid").return_value = False
+    mocker.patch("src.main.is_word_valid").return_value = False
 
     await react.callback(mock_interaction, "0", "hhi")
 
@@ -45,10 +45,10 @@ async def test_react_invalid_word(mocker):
 @pytest.mark.asyncio
 async def test_react_happy_path(mocker):
     mock_interaction = AsyncMock()
-    mocker.patch("is_word_valid").return_value = True
+    mocker.patch("src.main.is_word_valid").return_value = True
     mock_message_to_react_to = AsyncMock()
     mock_interaction.channel.fetch_message.return_value = mock_message_to_react_to
-    mocker.patch("word_to_letters_emojis_array").return_value = ["🇭"]
+    mocker.patch("src.main.word_to_letters_emojis_array").return_value = ["🇭"]
 
     await react.callback(mock_interaction, "0", "h")
 
