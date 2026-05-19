@@ -105,7 +105,7 @@ It contains 1 slash command named `react` that takes two parameters:
 The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to indicate if the code meets the below quality checks or not.
 
 1. The <a href="https://pypi.org/project/black/" target="_blank">Black</a> style is respected for every Python file.
-2. The Python docstrings is valid.
+2. The Python docstrings documentation is valid.
 3. The coverage of the unit tests is at least 80%.
 
 ## 🛡️ Safety guarantied for all the dependencies 🛡️
