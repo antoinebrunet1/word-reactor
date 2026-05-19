@@ -4,7 +4,7 @@ run:
 	python3 main.py
 
 run_all_tests:
-	python3 -m pytest test_main.py
+	python3 -m pytest test/test_main.py
 
 style_all_files:
 	python3 -m black .

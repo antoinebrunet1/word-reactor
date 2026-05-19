@@ -46,7 +46,7 @@ This is the GitHub Actions configuration file.
 
 ### [Python files](https://github.com/search?q=repo%3Aantoinebrunet1%2Fword-reactor+path%3A*.py&type=code)
 
-[`test_main.py`](test_main.py) contains the unit tests. [`webserver.py`](webserver.py) contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in [`main.py`](main.py).
+[`test/test_main.py`](test/test_main.py) contains the unit tests. [`webserver.py`](webserver.py) contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in [`main.py`](main.py).
 
 ### [`requirements.txt`](requirements.txt)
 

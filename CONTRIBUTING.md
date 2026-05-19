@@ -104,7 +104,7 @@ which uses `Makefile`.
 To run all the unit tests, you can run the command
 
 ```
-python3 -m pytest test_main.py
+python3 -m pytest test/test_main.py
 ```
 
 You can also run the command
