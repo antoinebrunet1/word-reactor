@@ -1,4 +1,4 @@
-check_cov_cmd = python3 -m pytest --cov=main --cov-fail-under=80
+check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
 
 run:
 	python3 src/main.py
