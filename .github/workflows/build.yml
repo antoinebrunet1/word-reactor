@@ -35,7 +35,7 @@ jobs:
       - name: Coverage is at least 80%
         run: |
           python3 -m pip install pytest-cov discord.py pytest pytest-mock python-dotenv pytest-asyncio flask
-          make check_cov_with_report
+          python3 -m pytest --cov=main --cov-fail-under=80 --cov-report json
 
       - name: Update Coverage Badge
         # GitHub actions: default branch variable
