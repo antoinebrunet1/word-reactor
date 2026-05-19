@@ -59,7 +59,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: docs/
 
   deploy_docs:
     permissions:
