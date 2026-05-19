@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 from discord.ext import commands
 from collections import Counter
-import webserver
+import src.webserver
 
 load_dotenv()
 
@@ -112,5 +112,5 @@ def letter_to_letter_emoji(letter):
 
 
 if __name__ == "__main__":  # pragma: no cover
-    webserver.keep_alive()
+    src.webserver.keep_alive()
     client.run(token)
