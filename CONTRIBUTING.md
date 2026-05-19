@@ -61,6 +61,14 @@ pydocstyle main.py
 
 The output of the command will indicate if the documentation is valid or not. If it is not, the issues will be explained.
 
+You can also run the command
+
+```
+make check_docs
+```
+
+which uses `Makefile`.
+
 #### 🧪 Unit tests coverage 🧪
 
 Please make sure that the coverage is at least 80% by running the command
