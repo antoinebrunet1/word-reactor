@@ -77,6 +77,14 @@ Please make sure that the coverage is at least 80% by running the command
 python3 -m pytest --cov=main --cov-fail-under=80
 ```
 
+You can also run the command
+
+```
+make check_cov
+```
+
+which uses `Makefile`.
+
 To see the missed lines, you can run the command
 
 ```
