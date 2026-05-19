@@ -43,6 +43,14 @@ and you can check if the style is followed in all files by running the command
 python3 -m black --check .
 ```
 
+You can also run the command
+
+```
+make check_style
+```
+
+which uses `Makefile`.
+
 #### 📖 Documentation 📖
 
 Please make sure that the pydoc documentation is valid by running the command
