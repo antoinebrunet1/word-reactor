@@ -22,4 +22,4 @@ check_cov_with_report:
 	$(check_cov_cmd) --cov-report json
 
 generate_docs:
-	pdoc src.main -o ./docs
+	pdoc src/main.py -o ./docs
