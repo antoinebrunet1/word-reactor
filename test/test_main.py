@@ -2,7 +2,7 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from main import (
+from src.main import (
     is_word_valid,
     word_to_letters_emojis_array,
     letter_to_letter_emoji,
