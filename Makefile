@@ -19,7 +19,7 @@ check_cov:
 	$(check_cov_cmd)
 
 check_cov_with_report:
-	$(check_cov_cmd) --cov-report json
+	$(check_cov_cmd) --cov-report json:coverage.json
 
 generate_docs:
 	pdoc ./main.py -o ./docs
