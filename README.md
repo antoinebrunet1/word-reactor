@@ -36,7 +36,7 @@
 
 ## 📚 `src/main.py` documentation 📚
 
-The `src/main.py` documentation is available at [this link](https://antoinebrunet1.github.io/word-reactor/). It is generated and deployed as part of the GitHub Actions pipeline that is triggered on every push and pull requests on the `main` branch.
+The `src/main.py` documentation is available at [this link](https://antoinebrunet1.github.io/word-reactor/). It is generated and deployed as part of the GitHub Actions pipeline that is triggered on every push and pull request on the `main` branch.
 
 ## 📂 Codebase overview 📂
 
