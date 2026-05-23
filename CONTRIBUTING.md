@@ -117,6 +117,14 @@ which uses `Makefile`.
 
 If you are using PyCharm, you can also right-click on `test_main.py` and select the option to run all the tests.
 
+To run a specific unit test, you can run the command
+
+```
+make run_specific_test TEST_NAME=test_name
+```
+
+with the name of the unit test from `test/test_main.py` instead of `test_name`.
+
 ## 💬 Support 💬
 
 If you have any questions, you can go under Discussions in the repository.
