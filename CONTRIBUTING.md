@@ -49,8 +49,6 @@ You can also run the command
 make check_style
 ```
 
-which uses `Makefile`.
-
 #### 📖 Documentation 📖
 
 Please make sure that the pydoc documentation is valid by running the command
@@ -67,8 +65,6 @@ You can also run the command
 make check_docs
 ```
 
-which uses `Makefile`.
-
 #### 🧪 Unit tests coverage 🧪
 
 Please make sure that the coverage is at least 80% by running the command
@@ -82,8 +78,6 @@ You can also run the command
 ```
 make check_cov
 ```
-
-which uses `Makefile`.
 
 To see the missed lines, you can run the command
 
@@ -99,8 +93,6 @@ You can also run the command
 make check_cov_with_report
 ```
 
-which uses `Makefile`.
-
 To run all the unit tests, you can run the command
 
 ```
@@ -112,8 +104,6 @@ You can also run the command
 ```
 make run_all_tests
 ```
-
-which uses `Makefile`.
 
 If you are using PyCharm, you can also right-click on `test_main.py` and select the option to run all the tests.
 
