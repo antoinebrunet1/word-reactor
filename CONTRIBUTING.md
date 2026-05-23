@@ -110,10 +110,16 @@ If you are using PyCharm, you can also right-click on `test_main.py` and select 
 To run a specific unit test, you can run the command
 
 ```
+python3 -m pytest test/test_main.py::test_name
+```
+
+or
+
+```
 make run_specific_test TEST_NAME=test_name
 ```
 
-with the name of the unit test from `test/test_main.py` instead of `test_name`.
+with the name of the unit test from `test/test_main.py` instead of `test_name` for both commands.
 
 ## 💬 Support 💬
 
