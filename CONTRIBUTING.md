@@ -121,6 +121,18 @@ make run_specific_unit_test TEST_NAME=test_name
 
 with the name of the unit test from `test/test_main.py` instead of `test_name` for both commands.
 
+To run specific unit tests, you can run the command
+
+```
+python3 -m pytest test/test_main.py::name_of_test1 test/test_main.py::name_of_test2 ...
+```
+
+or
+
+```
+make run_specific_unit_tests TESTS_NAMES="name_of_test1 name_of_test2 ..."
+```
+
 ## 💬 Support 💬
 
 If you have any questions, you can go under Discussions in the repository.
