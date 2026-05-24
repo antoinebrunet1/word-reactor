@@ -1,7 +1,7 @@
 # Variables (Beginning)
 
 check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
-run_all_tests_cmd = python3 -m pytest test/test_main.py
+run_all_unit_tests_cmd = python3 -m pytest test/test_main.py
 
 # Variables (End)
 
@@ -14,11 +14,11 @@ run:
 
 # Unit tests (Beginning)
 
-run_all_tests:
-	$(run_all_tests_cmd)
+run_all_unit_tests:
+	$(run_all_unit_tests_cmd)
 
 run_specific_unit_test:
-	$(run_all_tests_cmd)::$(TEST_NAME)
+	$(run_all_unit_tests_cmd)::$(TEST_NAME)
 
 run_specific_unit_tests:
 	python3 -m pytest $(foreach T,$(NAMES),test/test_main.py::$(T))

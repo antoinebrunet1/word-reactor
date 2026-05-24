@@ -102,7 +102,7 @@ python3 -m pytest test/test_main.py
 You can also run the command
 
 ```
-make run_all_tests
+make run_all_unit_tests
 ```
 
 If you are using PyCharm, you can also right-click on `test_main.py` and select the option to run all the tests.
