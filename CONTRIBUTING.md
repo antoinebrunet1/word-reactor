@@ -116,7 +116,7 @@ python3 -m pytest test/test_main.py::test_name
 or
 
 ```
-make run_specific_test TEST_NAME=test_name
+make run_specific_unit_test TEST_NAME=test_name
 ```
 
 with the name of the unit test from `test/test_main.py` instead of `test_name` for both commands.

@@ -17,7 +17,7 @@ run:
 run_all_tests:
 	$(run_all_tests_cmd)
 
-run_specific_test:
+run_specific_unit_test:
 	$(run_all_tests_cmd)::$(TEST_NAME)
 
 run_specified_unit_tests:
