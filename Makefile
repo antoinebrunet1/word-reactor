@@ -1,5 +1,6 @@
 # Variables (Beginning)
 
+main_py_file = src/main.py
 unit_tests_file = test/test_main.py
 check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
 run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
@@ -9,7 +10,7 @@ run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
 # Running the project (Beginning)
 
 run:
-	python3 src/main.py
+	python3 $(main_py_file)
 
 # Running the project (End)
 
@@ -45,9 +46,9 @@ check_style:
 # Documentation (Beginning)
 
 check_docs:
-	pydocstyle src/main.py
+	pydocstyle $(main_py_file)
 
 generate_docs:
-	pdoc src/main.py -o ./docs
+	pdoc $(main_py_file) -o ./docs
 
 # Documentation (End)
