@@ -9,7 +9,7 @@ run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
 
 # Running the project (Beginning)
 
-run:
+run_project:
 	python3 $(main_py_file)
 
 # Running the project (End)
