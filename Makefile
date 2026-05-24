@@ -20,6 +20,9 @@ run_all_tests:
 run_specific_test:
 	$(run_all_tests_cmd)::$(TEST_NAME)
 
+run_specified_unit_tests:
+	python3 -m pytest $(foreach T,$(NAMES),test/test_main.py::$(T))
+
 check_cov:
 	$(check_cov_cmd)
 
