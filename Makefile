@@ -23,7 +23,7 @@ run_specific_unit_test:
 	$(run_all_unit_tests_cmd)::$(TEST_NAME)
 
 run_specific_unit_tests:
-	python3 -m pytest $(foreach T,$(NAMES),$(unit_tests_file)::$(T))
+	python3 -m pytest $(foreach T,$(TESTS_NAMES),$(unit_tests_file)::$(T))
 
 check_cov:
 	$(check_cov_cmd)
