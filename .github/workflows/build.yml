@@ -80,3 +80,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  cyclo-complexity:
+    name: Cyclomatic complexity
+    runs-on: ubuntu-latest
+    container: antoinebrunet1/word_reactor_pipeline
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cyclomatic complexity
+        run: make cyclo_complexity_check
