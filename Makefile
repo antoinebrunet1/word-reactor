@@ -52,3 +52,10 @@ generate_docs:
 	pdoc $(main_py_file) -o ./docs
 
 # Documentation (End)
+
+# Cyclomatic complexity (Beginning)
+
+cyclo_complexity_check:
+	python3 -m lizard *.py
+
+# Cyclomatic complexity (End)
