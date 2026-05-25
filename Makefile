@@ -68,4 +68,7 @@ cyclo_complexity_html:
 docker_login:
 	docker login
 
+build_docker_image:
+	docker build -t word_reactor_pipeline -f Dockerfile .
+
 # Docker (End)
