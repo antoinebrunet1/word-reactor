@@ -62,3 +62,10 @@ cyclo_complexity_html:
 	python3 -m lizard -o complexity.html *.py
 
 # Cyclomatic complexity (End)
+
+# Docker (Beginning)
+
+docker_login:
+	docker login
+
+# Docker (End)
