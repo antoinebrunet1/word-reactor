@@ -74,9 +74,9 @@ build_docker_image:
 	docker build -t $(docker_image_name) -f Dockerfile .
 
 tag_docker_image:
-	docker tag $(docker_image_name) $(docker_hub_username)/word_reactor_pipeline:latest
+	docker tag $(docker_image_name) $(docker_hub_username)/$(docker_image_name):latest
 
 push_docker_image:
-	docker push $(docker_hub_username)/word_reactor_pipeline:latest
+	docker push $(docker_hub_username)/$(docker_image_name):latest
 
 # Docker (End)
