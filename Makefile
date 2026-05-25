@@ -75,4 +75,7 @@ build_docker_image:
 tag_docker_image:
 	docker tag $(docker_image_name) antoinebrunet1/word_reactor_pipeline:latest
 
+push_docker_image:
+	docker push antoinebrunet1/word_reactor_pipeline:latest
+
 # Docker (End)
