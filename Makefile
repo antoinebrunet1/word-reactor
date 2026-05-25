@@ -5,6 +5,7 @@ unit_tests_file = test/test_main.py
 check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
 run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
 docker_image_name = word_reactor_pipeline
+dockerhub_username = antoinebrunet1
 
 # Variables (End)
 
@@ -73,9 +74,9 @@ build_docker_image:
 	docker build -t $(docker_image_name) -f Dockerfile .
 
 tag_docker_image:
-	docker tag $(docker_image_name) antoinebrunet1/word_reactor_pipeline:latest
+	docker tag $(docker_image_name) $(dockerhub_username)/word_reactor_pipeline:latest
 
 push_docker_image:
-	docker push antoinebrunet1/word_reactor_pipeline:latest
+	docker push $(dockerhub_username)/word_reactor_pipeline:latest
 
 # Docker (End)
