@@ -71,4 +71,7 @@ docker_login:
 build_docker_image:
 	docker build -t word_reactor_pipeline -f Dockerfile .
 
+tag_docker_image:
+	docker tag word_reactor_pipeline antoinebrunet1/word_reactor_pipeline:latest
+
 # Docker (End)
