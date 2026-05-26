@@ -70,13 +70,13 @@ cyclo_complexity_html:
 docker_login:
 	docker login
 
-build_docker_image:
+build_docker_image: docker_login
 	docker build -t $(docker_image_name) -f Dockerfile .
 
-tag_docker_image:
+tag_docker_image: build_docker_image
 	docker tag $(docker_image_name) $(docker_hub_username)/$(docker_image_name):latest
 
-push_docker_image:
+push_docker_image: tag_docker_image
 	docker push $(docker_hub_username)/$(docker_image_name):latest
 
 # Docker (End)
