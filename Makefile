@@ -63,6 +63,9 @@ cyclo_complexity_check:
 cyclo_complexity_html:
 	python3 -m lizard -o complexity.html src/ test/
 
+complexity_check:
+	bash complexity_check.sh
+
 # Cyclomatic complexity (End)
 
 # Docker (Beginning)
