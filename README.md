@@ -78,7 +78,17 @@ choco install make
     SERVER_ID=
     ```
    Put your values to the right of the two `=`. The first value is the token of the test bot. The second value is the ID of a server where you want to test your local code using the test bot. You need to add the test bot to that server. You can watch [this YouTube tutorial](https://youtu.be/CHbN_gB30Tw?si=ufaBzNO-E4dsEgf6) to see how to add the test bot to the server.
-6. Run the bot by running `src/main.py`.
+6. Run the bot by running `src/main.py`. You can use the command
+
+   ```
+   python3 src/main.py
+   ```
+   
+   or
+
+   ```
+   make run_project
+   ```
 
 :warning: **Warning:** Do not push `.env` because it contains your bot token.
 
