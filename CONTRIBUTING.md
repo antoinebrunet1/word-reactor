@@ -138,14 +138,10 @@ make run_specific_unit_tests TESTS_NAMES="name_of_test1 name_of_test2 ..."
 Please make sure that the cyclomatic complexity is not over 20 by running the command
 
 ```
-bash complexity_check.sh
+python3 -m radon cc --min D src/ test/
 ```
 
-or
-
-```
-make complexity_check
-```
+and making sure there is no output.
 
 To get the cyclomatic complexity of each function, method and class, you can run the command
 
