@@ -141,7 +141,7 @@ Please make sure that the cyclomatic complexity is not over 20 by running the co
 python3 -m radon cc --min D src/ test/
 ```
 
-and making sure there is no output.
+and making sure there is no output in the terminal.
 
 To get the cyclomatic complexity of each function, method and class, you can run the command
 
