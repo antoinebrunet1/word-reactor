@@ -58,10 +58,10 @@ generate_docs:
 # Cyclomatic complexity (Beginning)
 
 cyclo_complexity_check:
-	python3 -m lizard *.py
+	python3 -m lizard src/ test/
 
 cyclo_complexity_html:
-	python3 -m lizard -o complexity.html *.py
+	python3 -m lizard -o complexity.html src/ test/
 
 # Cyclomatic complexity (End)
 
