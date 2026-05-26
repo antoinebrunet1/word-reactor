@@ -116,7 +116,7 @@ The `main` branch of this repository contains a GitHub Actions CI/CD pipeline to
 1. The <a href="https://pypi.org/project/black/" target="_blank">Black</a> style is respected for every Python file.
 2. The Python documentation is valid.
 3. The coverage of the unit tests is at least 80%.
-4. The cyclomatic complexity is not over 15.
+4. The cyclomatic complexity is not over 20.
 
 ## 🛡️ Safety guarantied for all the dependencies 🛡️
 
