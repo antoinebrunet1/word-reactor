@@ -90,5 +90,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Cyclomatic complexity is not over 15
-        run: make cyclo_complexity_check
+      - name: Cyclomatic complexity
+        run: make complexity_check
