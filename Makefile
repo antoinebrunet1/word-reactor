@@ -57,12 +57,6 @@ generate_docs:
 
 # Cyclomatic complexity (Beginning)
 
-cyclo_complexity_check:
-	python3 -m lizard src/ test/
-
-cyclo_complexity_html:
-	python3 -m lizard -o complexity.html src/ test/
-
 complexity:
 	python3 -m radon cc src/ test/
 
