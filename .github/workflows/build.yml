@@ -68,6 +68,7 @@ jobs:
           path: docs/
 
   deploy_docs:
+    name: Deploy documentation
     permissions:
       id-token: write
       pages: write
