@@ -68,7 +68,7 @@ choco install make
 3. Run the following command to install the pip dependencies:
 
    ```
-   python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov pdoc
+   python3 -m pip install black pydocstyle discord.py pytest pytest-mock python-dotenv pytest-asyncio pytest-cov pdoc radon
    ```
 4. Fork the repository.
 5. Add a **non-public** file called `.env` with this content:
