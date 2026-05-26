@@ -133,6 +133,32 @@ or
 make run_specific_unit_tests TESTS_NAMES="name_of_test1 name_of_test2 ..."
 ```
 
+#### 🧩 Cyclomatic complexity 🧩
+
+Please make sur that the cyclomatic complexity is not over 15 by running the command
+
+```
+python3 -m lizard *.py
+```
+
+or
+
+```
+make cyclo_complexity_check
+```
+
+To get the cyclomatic complexity of each function in `complexity.html`, you can run the command
+
+```
+python3 -m lizard -o complexity.html *.py
+```
+
+or
+
+```
+make cyclo_complexity_html
+```
+
 ## 💬 Support 💬
 
 If you have any questions, you can go under Discussions in the repository.
