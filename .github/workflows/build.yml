@@ -82,7 +82,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  cyclo-complexity:
+  cyclo_complexity:
     name: Cyclomatic complexity
     runs-on: ubuntu-latest
     container: antoinebrunet1/word_reactor_pipeline
