@@ -135,28 +135,28 @@ make run_specific_unit_tests TESTS_NAMES="name_of_test1 name_of_test2 ..."
 
 #### 🧩 Cyclomatic complexity 🧩
 
-Please make sur that the cyclomatic complexity is not over 15 by running the command
+Please make sure that the cyclomatic complexity is not over 20 by running the command
 
 ```
-python3 -m lizard src/ test/
-```
-
-or
-
-```
-make cyclo_complexity_check
-```
-
-To get the cyclomatic complexity of each function in `complexity.html`, you can run the command
-
-```
-python3 -m lizard -o complexity.html src/ test/
+bash complexity_check.sh
 ```
 
 or
 
 ```
-make cyclo_complexity_html
+make complexity_check
+```
+
+To get the cyclomatic complexity of each function, method and class, you can run the command
+
+```
+python3 -m radon cc src/ test/
+```
+
+or
+
+```
+make complexity
 ```
 
 ## 💬 Support 💬
