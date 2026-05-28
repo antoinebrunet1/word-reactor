@@ -45,7 +45,7 @@ This is the GitHub Actions configuration file.
 
 ### [Python files](https://github.com/search?q=repo%3Aantoinebrunet1%2Fword-reactor+path%3A*.py&type=code)
 
-[`test/test_main.py`](test/test_main.py) contains the unit tests. [`src/webserver.py`](src/webserver.py) contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in [`src/main.py`](src/main.py).
+[`test/test_main.py`](test/test_main.py) contains the unit tests. [`src/webserver.py`](src/webserver.py) contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in [`src/main.py`](src/main.py). [`src/__init__.py`](src/__init__.py) is an empty file that exists so that the `src` folder can be considered a Python module. I added it because I was facing an issue after moving the Python files not related to testing to the `src` folder. 
 
 ### [`requirements.txt`](requirements.txt)
 
