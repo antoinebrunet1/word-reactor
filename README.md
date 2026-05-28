@@ -126,7 +126,7 @@ This project uses Dependabot to automatically open PRs for security issues and a
 
 This repository uses a custom Docker image located on Docker Hub for every job of the GitHub Actions pipeline. That image has been built using the `Dockerfile` file located at the root of this repository before being pushed to Docker Hub. The reason for using this custom image instead of `ubuntu:latest` is that the custom image already has the `pip` dependencies installed which means that they do not need to be installed every time the pipeline runs.
 
-If changes are made to `Dockerfile`, the local and remote images can be deleted from Docker Desktop and the new image specified in `Dockerfile` can be pushed to Docker Hub using the command
+If changes are made to `Dockerfile`, the new image specified in `Dockerfile` can be pushed to Docker Hub using the command
 
 ```
 make push_docker_image
