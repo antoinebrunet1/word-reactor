@@ -89,7 +89,7 @@ def is_word_valid(word):
 
 def word_to_letters_emojis_array(word):
     """
-    Return an array of the emoji equivalents of each letter in a given uppercase word. The emoji for A is 0x1F1E6.
+    Return an array of the emoji equivalents of each letter in a given uppercase word.
 
     :param word: The given word.
     :return: The resulting array.
@@ -99,16 +99,16 @@ def word_to_letters_emojis_array(word):
 
 def letter_to_letter_emoji(letter):
     """
-    Return the emoji equivalent of a given uppercase letter. The emoji for A is 0x1F1E6.
+    Return the emoji equivalent of a given uppercase letter.
 
     :param letter: The letter to convert.
     :return: The emoji equivalent of the given uppercase letter.
     """
     base = ord("A")
     offset = ord(letter) - base
+    upper_case_a_emoji_unicode = 0x1F1E6
 
-    # 0x1F1E6 is the Unicode of the emoji letter for the letter A.
-    return chr(0x1F1E6 + offset)
+    return chr(upper_case_a_emoji_unicode + offset)
 
 
 if __name__ == "__main__":  # pragma: no cover
