@@ -70,6 +70,9 @@ complexity_check:
 docker_login:
 	docker login
 
+remove_docker_image:
+	docker rmi -f $$(docker images --format "{{.Repository}} {{.ID}}" | grep "^$(docker_image_name) " | cut -d ' ' -f 2)
+
 build_docker_image: docker_login
 	docker build -t $(docker_image_name) -f Dockerfile .
 
