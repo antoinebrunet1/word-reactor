@@ -57,6 +57,10 @@ To install the `make` command on Windows, [install Chocolatey](https://chocolate
 choco install make
 ```
 
+### [`complexity_check.sh`](complexity_check.sh)
+
+This file is used in [`Makefile`](Makefile).
+
 ### [`requirements.txt`](requirements.txt)
 
 This file was added for hosting purposes. It contains all the dependencies of the project.
