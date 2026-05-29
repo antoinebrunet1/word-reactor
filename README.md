@@ -47,10 +47,6 @@ This is the GitHub Actions configuration file.
 
 [`test/test_main.py`](test/test_main.py) contains the unit tests. [`src/webserver.py`](src/webserver.py) contains the code needed for Render (the service used for hosting the bot). The rest of the Python code is in [`src/main.py`](src/main.py). [`src/__init__.py`](src/__init__.py) is an empty file that exists so that the `src` folder can be considered a Python module. I added it because I was facing an issue after moving the Python files not related to testing to the `src` folder. 
 
-### [`requirements.txt`](requirements.txt)
-
-This file was added for hosting purposes. It contains all the dependencies of the project.
-
 ### [`Makefile`](Makefile)
 
 This file is used in [`.github/workflows/build.yml`](.github/workflows/build.yml) but can also be used locally.
@@ -60,6 +56,10 @@ To install the `make` command on Windows, [install Chocolatey](https://chocolate
 ```
 choco install make
 ```
+
+### [`requirements.txt`](requirements.txt)
+
+This file was added for hosting purposes. It contains all the dependencies of the project.
 
 ## 💻 Local setup 💻
 
