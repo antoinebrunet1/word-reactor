@@ -64,11 +64,11 @@ complexity_check:
 
 # Cyclomatic complexity (End)
 
-# Docker (Beginning)
+# Docker push (Beginning)
 
 docker_push:
 	docker build -t $(docker_image_name) .
 	docker login
 	docker push $(docker_image_name)
 
-# Docker (End)
+# Docker push (End)
