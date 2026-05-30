@@ -66,16 +66,16 @@ complexity_check:
 
 # Docker (Beginning)
 
-docker_login:
-	docker login
-
-remove_docker_image: docker_login
+remove_docker_image:
 	docker rmi -f $(docker_image_name)
 
 build_docker_image: remove_docker_image
 	docker build -t $(docker_image_name) .
 
-push_docker_image: build_docker_image
+docker_login: build_docker_image
+	docker login
+
+push_docker_image: docker_login
 	docker push $(docker_image_name)
 
 # Docker (End)
