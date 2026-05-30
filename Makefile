@@ -70,7 +70,7 @@ docker_login:
 	docker login
 
 remove_docker_image: docker_login
-	docker rmi -f $$(docker images --format "{{.Repository}} {{.ID}}" | grep "^$(docker_image_name) " | cut -d ' ' -f 2)
+	docker rmi -f $(docker_image_name)
 
 build_docker_image: remove_docker_image
 	docker build -t $(docker_image_name) .
