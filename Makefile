@@ -66,7 +66,7 @@ complexity_check:
 
 # Docker (Beginning)
 
-push_docker_image:
+docker_push:
 	docker build -t $(docker_image_name) .
 	docker login
 	docker push $(docker_image_name)
