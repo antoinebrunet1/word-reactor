@@ -4,8 +4,7 @@ main_py_file = src/main.py
 unit_tests_file = test/test_main.py
 check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
 run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
-docker_image_name = word_reactor_pipeline
-docker_hub_username = antoinebrunet1
+docker_image_name = antoinebrunet1/word_reactor_pipeline
 
 # Variables (End)
 
@@ -74,12 +73,9 @@ remove_docker_image: docker_login
 	docker rmi -f $$(docker images --format "{{.Repository}} {{.ID}}" | grep "^$(docker_image_name) " | cut -d ' ' -f 2)
 
 build_docker_image: remove_docker_image
-	docker build -t $(docker_image_name) -f Dockerfile .
+	docker build -t $(docker_image_name) .
 
-tag_docker_image: build_docker_image
-	docker tag $(docker_image_name) $(docker_hub_username)/$(docker_image_name)
-
-push_docker_image: tag_docker_image
-	docker push $(docker_hub_username)/$(docker_image_name):latest
+push_docker_image: build_docker_image
+	docker push $(docker_image_name)
 
 # Docker (End)
