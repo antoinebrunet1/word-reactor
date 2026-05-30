@@ -1,4 +1,4 @@
-# Variables (Beginning)
+# Variables
 
 main_py_file = src/main.py
 unit_tests_file = test/test_main.py
@@ -6,12 +6,12 @@ check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
 run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
 docker_image_name = antoinebrunet1/word_reactor_pipeline
 
-# Running the project (Beginning)
+# Running the project
 
 run_project:
 	python3 $(main_py_file)
 
-# Unit tests (Beginning)
+# Unit tests
 
 run_all_unit_tests:
 	$(run_all_unit_tests_cmd)
@@ -28,7 +28,7 @@ check_cov:
 check_cov_with_report:
 	$(check_cov_cmd) --cov-report json
 
-# Style (Beginning)
+# Style
 
 style_all_files:
 	python3 -m black .
@@ -36,7 +36,7 @@ style_all_files:
 check_style:
 	python3 -m black --check .
 
-# Documentation (Beginning)
+# Documentation
 
 check_docs:
 	pydocstyle $(main_py_file)
@@ -44,7 +44,7 @@ check_docs:
 generate_docs:
 	pdoc $(main_py_file) -o ./docs
 
-# Cyclomatic complexity (Beginning)
+# Cyclomatic complexity
 
 complexity:
 	python3 -m radon cc src/ test/
@@ -52,7 +52,7 @@ complexity:
 complexity_check:
 	bash complexity_check.sh
 
-# Docker push (Beginning)
+# Docker push
 
 docker_push:
 	docker build -t $(docker_image_name) .
