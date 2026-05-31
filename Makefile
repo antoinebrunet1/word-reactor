@@ -64,5 +64,4 @@ docker_image_name = antoinebrunet1/word_reactor_pipeline
 
 docker_push:
 	docker build -t $(docker_image_name) .
-	docker login
 	docker push $(docker_image_name)
