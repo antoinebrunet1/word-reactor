@@ -1,10 +1,6 @@
 # Variables
 
 main_py_file = src/main.py
-unit_tests_file = test/test_main.py
-pytest_cmd = python3 -m pytest
-check_cov_cmd = $(pytest_cmd) --cov=src.main --cov-fail-under=80
-run_all_unit_tests_cmd = $(pytest_cmd) $(unit_tests_file)
 black_cmd = python3 -m black
 cc_cmd = python3 -m radon cc
 cc_paths = src/ test/
@@ -16,6 +12,11 @@ run_project:
 	python3 $(main_py_file)
 
 # Unit tests
+
+unit_tests_file = test/test_main.py
+pytest_cmd = python3 -m pytest
+check_cov_cmd = $(pytest_cmd) --cov=src.main --cov-fail-under=80
+run_all_unit_tests_cmd = $(pytest_cmd) $(unit_tests_file)
 
 run_all_unit_tests:
 	$(run_all_unit_tests_cmd)
