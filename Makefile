@@ -60,5 +60,5 @@ complexity_check:
 
 # Docker push
 
-docker_push:
+update_docker_image:
 	docker buildx build --push -t antoinebrunet1/word_reactor_pipeline .
