@@ -4,6 +4,7 @@ main_py_file = src/main.py
 unit_tests_file = test/test_main.py
 check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
 run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
+black_cmd = python3 -m black
 cc_cmd = python3 -m radon cc
 cc_paths = src/ test/
 docker_image_name = antoinebrunet1/word_reactor_pipeline
@@ -33,10 +34,10 @@ check_cov_with_report:
 # Style
 
 style_all_files:
-	python3 -m black .
+	$(black_cmd) .
 
 check_style:
-	python3 -m black --check .
+	$(black_cmd) --check .
 
 # Documentation
 
