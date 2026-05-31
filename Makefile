@@ -1,4 +1,4 @@
-# Variables
+# Main Python file variable
 
 main_py_file = src/main.py
 
