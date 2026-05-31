@@ -58,7 +58,7 @@ complexity:
 complexity_check:
 	[ -z "$$($(cc_cmd) -n D $(cc_paths))" ]
 
-# Docker push
+# Update Docker image
 
 update_docker_image:
 	docker buildx build --push -t antoinebrunet1/word_reactor_pipeline .
