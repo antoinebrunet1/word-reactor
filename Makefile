@@ -11,14 +11,13 @@ run_project:
 
 pytest = python3 -m pytest
 unit_tests_file = test/test_main.py
-run_all_unit_tests = $(pytest) $(unit_tests_file)
 check_cov = $(pytest) --cov=src.main --cov-fail-under=80
 
 run_all_unit_tests:
-	$(run_all_unit_tests)
+	$(pytest) $(unit_tests_file)
 
 run_specific_unit_test:
-	$(run_all_unit_tests)::$(TEST_NAME)
+	$(pytest) $(unit_tests_file)::$(TEST_NAME)
 
 run_specific_unit_tests:
 	$(pytest) $(addprefix $(unit_tests_file)::,$(TEST_NAMES))
