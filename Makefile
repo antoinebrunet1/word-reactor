@@ -50,7 +50,7 @@ complexity:
 	python3 -m radon cc src/ test/
 
 complexity_check:
-	bash complexity_check.sh
+	[ -n $(python3 -m radon cc --min D src/ test/) ]
 
 # Docker push
 
