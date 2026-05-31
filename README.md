@@ -137,7 +137,7 @@ This repository uses a custom Docker image located on Docker Hub for every job o
 If changes are made to `Dockerfile`, the new image specified in `Dockerfile` can be pushed to Docker Hub using the command
 
 ```
-make push_docker_image
+make update_docker_image
 ```
 
 ## 🔒 `main` branch protection 🔒
