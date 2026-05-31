@@ -11,7 +11,15 @@
 <p align="center">
   <img src="images/readme/logo.gif" alt="logo" width="120px" height="120px"/>
   <br>
-  ⚡ <b>Python Discord bot that reacts to messages with given words using emoji letters</b> ⚡
+  <picture>
+    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.webp" type="image/webp">
+    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥" width="16" height="16">
+  </picture>
+  <b>Python Discord bot that reacts to messages with given words using emoji letters</b>
+  <picture>
+    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.webp" type="image/webp">
+    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥" width="16" height="16">
+  </picture>
   <br>
 </p>
 
