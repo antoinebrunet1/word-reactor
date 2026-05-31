@@ -50,7 +50,7 @@ generate_docs:
 # Cyclomatic complexity
 
 cc_cmd = python3 -m radon cc
-cc_paths = src/ test/
+cc_paths = src test
 
 complexity:
 	$(cc_cmd) $(cc_paths)
