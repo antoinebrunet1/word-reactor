@@ -2,8 +2,9 @@
 
 main_py_file = src/main.py
 unit_tests_file = test/test_main.py
-check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
-run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
+pytest_cmd = python3 -m pytest
+check_cov_cmd = $(pytest_cmd) --cov=src.main --cov-fail-under=80
+run_all_unit_tests_cmd = $(pytest_cmd) $(unit_tests_file)
 black_cmd = python3 -m black
 cc_cmd = python3 -m radon cc
 cc_paths = src/ test/
@@ -23,7 +24,7 @@ run_specific_unit_test:
 	$(run_all_unit_tests_cmd)::$(TEST_NAME)
 
 run_specific_unit_tests:
-	python3 -m pytest $(addprefix $(unit_tests_file)::,$(TEST_NAMES))
+	$(pytest_cmd) $(addprefix $(unit_tests_file)::,$(TEST_NAMES))
 
 check_cov:
 	$(check_cov_cmd)
