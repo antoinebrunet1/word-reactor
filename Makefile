@@ -60,8 +60,5 @@ complexity_check:
 
 # Docker push
 
-docker_image_name = antoinebrunet1/word_reactor_pipeline
-
 docker_push:
-	docker build -t $(docker_image_name) .
-	docker push $(docker_image_name)
+	docker buildx build --push -t antoinebrunet1/word_reactor_pipeline .
