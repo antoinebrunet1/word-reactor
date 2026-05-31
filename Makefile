@@ -1,7 +1,6 @@
 # Variables
 
 main_py_file = src/main.py
-black_cmd = python3 -m black
 cc_cmd = python3 -m radon cc
 cc_paths = src/ test/
 docker_image_name = antoinebrunet1/word_reactor_pipeline
@@ -34,6 +33,8 @@ check_cov_with_report:
 	$(check_cov_cmd) --cov-report json
 
 # Style
+
+black_cmd = python3 -m black
 
 style_all_files:
 	$(black_cmd) .
