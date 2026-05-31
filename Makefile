@@ -1,7 +1,6 @@
 # Variables
 
 main_py_file = src/main.py
-docker_image_name = antoinebrunet1/word_reactor_pipeline
 
 # Running the project
 
@@ -60,6 +59,8 @@ complexity_check:
 	[ -n $($(cc_cmd) --min D $(cc_paths)) ]
 
 # Docker push
+
+docker_image_name = antoinebrunet1/word_reactor_pipeline
 
 docker_push:
 	docker build -t $(docker_image_name) .
