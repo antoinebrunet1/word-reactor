@@ -9,10 +9,10 @@ run_project:
 
 # Unit tests
 
-pytest_cmd = python3 -m pytest
+pytest = python3 -m pytest
 unit_tests_file = test/test_main.py
-run_all_unit_tests_cmd = $(pytest_cmd) $(unit_tests_file)
-check_cov_cmd = $(pytest_cmd) --cov=src.main --cov-fail-under=80
+run_all_unit_tests_cmd = $(pytest) $(unit_tests_file)
+check_cov_cmd = $(pytest) --cov=src.main --cov-fail-under=80
 
 run_all_unit_tests:
 	$(run_all_unit_tests_cmd)
@@ -21,7 +21,7 @@ run_specific_unit_test:
 	$(run_all_unit_tests_cmd)::$(TEST_NAME)
 
 run_specific_unit_tests:
-	$(pytest_cmd) $(addprefix $(unit_tests_file)::,$(TEST_NAMES))
+	$(pytest) $(addprefix $(unit_tests_file)::,$(TEST_NAMES))
 
 check_cov:
 	$(check_cov_cmd)
