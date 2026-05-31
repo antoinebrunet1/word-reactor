@@ -1,8 +1,6 @@
 # Variables
 
 main_py_file = src/main.py
-cc_cmd = python3 -m radon cc
-cc_paths = src/ test/
 docker_image_name = antoinebrunet1/word_reactor_pipeline
 
 # Running the project
@@ -51,6 +49,9 @@ generate_docs:
 	pdoc $(main_py_file) -o ./docs
 
 # Cyclomatic complexity
+
+cc_cmd = python3 -m radon cc
+cc_paths = src/ test/
 
 complexity:
 	$(cc_cmd) $(cc_paths)
