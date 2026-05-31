@@ -56,7 +56,7 @@ complexity:
 	$(cc_cmd) $(cc_paths)
 
 complexity_check:
-	[ -z "$$($(cc_cmd) --min D $(cc_paths))" ]
+	[ -z "$$($(cc_cmd) -n D $(cc_paths))" ]
 
 # Docker push
 
