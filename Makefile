@@ -56,7 +56,7 @@ complexity:
 	$(cc) $(cc_paths)
 
 complexity_check:
-	[ -z "$$($(cc_cmd) -n D $(cc_paths))" ]
+	[ -z "$$($(cc) -n D $(cc_paths))" ]
 
 # Update Docker image
 
