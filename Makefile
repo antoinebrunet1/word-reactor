@@ -4,6 +4,8 @@ main_py_file = src/main.py
 unit_tests_file = test/test_main.py
 check_cov_cmd = python3 -m pytest --cov=src.main --cov-fail-under=80
 run_all_unit_tests_cmd = python3 -m pytest $(unit_tests_file)
+cc_cmd = python3 -m radon cc
+cc_paths = src/ test/
 docker_image_name = antoinebrunet1/word_reactor_pipeline
 
 # Running the project
@@ -47,10 +49,10 @@ generate_docs:
 # Cyclomatic complexity
 
 complexity:
-	python3 -m radon cc src/ test/
+	$(cc_cmd) $(cc_paths)
 
 complexity_check:
-	[ -n $(python3 -m radon cc --min D src/ test/) ]
+	[ -n $($(cc_cmd) --min D $(cc_paths)) ]
 
 # Docker push
 
