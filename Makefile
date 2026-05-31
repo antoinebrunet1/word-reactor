@@ -49,11 +49,11 @@ generate_docs:
 
 # Cyclomatic complexity
 
-cc_cmd = python3 -m radon cc
+cc = python3 -m radon cc
 cc_paths = src test
 
 complexity:
-	$(cc_cmd) $(cc_paths)
+	$(cc) $(cc_paths)
 
 complexity_check:
 	[ -z "$$($(cc_cmd) -n D $(cc_paths))" ]
