@@ -31,13 +31,13 @@ check_cov_with_report:
 
 # Style
 
-black_cmd = python3 -m black
+black = python3 -m black
 
 style_all_files:
-	$(black_cmd) .
+	$(black) .
 
 check_style:
-	$(black_cmd) --check .
+	$(black) --check .
 
 # Documentation
 
