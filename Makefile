@@ -11,8 +11,8 @@ run_project:
 
 pytest_cmd = python3 -m pytest
 unit_tests_file = test/test_main.py
-check_cov_cmd = $(pytest_cmd) --cov=src.main --cov-fail-under=80
 run_all_unit_tests_cmd = $(pytest_cmd) $(unit_tests_file)
+check_cov_cmd = $(pytest_cmd) --cov=src.main --cov-fail-under=80
 
 run_all_unit_tests:
 	$(run_all_unit_tests_cmd)
