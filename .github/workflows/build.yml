@@ -40,7 +40,7 @@ jobs:
 
       - name: Coverage is at least 80%
         run: |
-          python3 -m pip install pytest-cov discord.py pytest pytest-mock python-dotenv pytest-asyncio flask
+          pip install pytest-cov discord.py pytest pytest-mock python-dotenv pytest-asyncio flask
           make check_cov_with_report
 
       - name: Update Coverage Badge
@@ -58,7 +58,7 @@ jobs:
 
       - name: Generate docs
         run: |
-          python3 -m pip install discord.py python-dotenv pdoc flask
+          pip install discord.py python-dotenv pdoc flask
           make generate_docs
 
       - name: Upload static files as artifact
